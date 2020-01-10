@@ -1,1 +1,2 @@
-# arnout_a_bradley_p_caron_a_nguyen_h_RHAC
+# RHAC Rebrand
+This is just a placeholder for the RHAC rebrand Final Intergrated Project.
