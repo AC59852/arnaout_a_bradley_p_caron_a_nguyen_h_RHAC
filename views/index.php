@@ -9,5 +9,6 @@
 <body>
     <header><?php include("../templates/header.php");?></header>
     <h1>this is just some placeholder text for the index for RHAC</h1>
+    <footer><?php include("../templates/footer.php");?></footer>
 </body>
 </html>
