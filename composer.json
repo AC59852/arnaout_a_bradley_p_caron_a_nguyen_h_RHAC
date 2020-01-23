@@ -1,13 +1,9 @@
 {
-    "require": {
-      "ext-mysqli": "*"
-    },
+  "require": {
+    "php": "^7.2.0"
+  },
 
-    "scripts": {
-      "post-install-cmd": [
-        "php artisan clear-compiled",
-        "chmod -R 777 public/"
-    ]
-   
-    }
-  }
+  "require-dev": {
+    "heroku/heroku-buildpack-php" : "dev-master"
+}
+}
