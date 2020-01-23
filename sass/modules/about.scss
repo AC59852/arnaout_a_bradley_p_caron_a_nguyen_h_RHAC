@@ -1,0 +1,31 @@
+#about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    #aboutText {
+        flex-direction: column;
+        margin-left: 5%;
+        h3 {
+            text-align: center;
+            width: 25vw;
+            height: 5vw;
+            padding-top: 5px;
+            background-color: gray;
+        }
+        p {
+            background-color: gray;
+            width: 25vw;
+            height: 16vw;
+            margin-top: 70%;
+            text-align: center;
+            padding-top: 55px;
+        }
+    }
+    #placeholderAbout {
+        height: 45vw;
+        width: 40%;
+        background-color: lightgray;
+        margin-right: 4%;
+        margin-top: 5%;
+    }
+}
