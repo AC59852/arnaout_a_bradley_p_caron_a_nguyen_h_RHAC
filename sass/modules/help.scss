@@ -1,0 +1,32 @@
+#help {
+    #helpPara1 {
+
+        text-align: center;
+        height: 27vw;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20%;
+        background-color: lightgray;
+        font-size: 5vw;
+    }
+    #helpBtns {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 7%;
+        button {
+            border: none;
+        background-color: gray;
+        padding: 2% 4% 2% 4%;
+        }
+    }
+    #helpPopup {
+        margin: 6% auto;
+        width: 70%;
+        background-color: lightgray;
+        height: 20vw;
+        p {
+            text-align: center;
+            padding-top: 12%;
+        }
+    }
+    }

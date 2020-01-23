@@ -1,3 +1,10 @@
 @import '_vars';
 @import 'modules/nav.scss';
 @import 'modules/footer.scss';
+@import 'modules/hero.scss';
+@import 'modules/about.scss';
+@import 'modules/help.scss';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

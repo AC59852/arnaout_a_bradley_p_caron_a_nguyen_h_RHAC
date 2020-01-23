@@ -1,3 +1,4 @@
+<footer class="mainFooter">
 <div>
     <div class="footerSocial">
         <img src="../public/images/social1" alt="Social Icon 1">
@@ -7,3 +8,4 @@
     </div>
     <h3>Copyright</h3>
 </div>
+</footer>
