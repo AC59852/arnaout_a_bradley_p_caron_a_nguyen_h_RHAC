@@ -1,0 +1,39 @@
+#action {
+    margin-top: 15%;
+}
+
+.actionCon {
+    background-color: lightgray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .actionIcon {
+        width: 25%;
+        background-color: #333;
+        height: 18vw;
+        margin: 0 auto;
+        h3 {
+            color: white;
+            text-align: center;
+        }
+    }
+    p {
+        width: 75%;
+        margin: 4% auto;
+        background-color: #333;
+        padding: 3%;
+        color: white;
+    }
+
+    a {
+        display: flex;
+        width: 25%;
+        margin: 0 auto;
+        background-color: #333;
+        color: white;
+        padding: 5%;
+    }
+}
+
+.actionCon:nth-child(2) {
+    background-color: gray;
+}

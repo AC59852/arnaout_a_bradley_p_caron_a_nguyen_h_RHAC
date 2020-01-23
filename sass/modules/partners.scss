@@ -1,0 +1,19 @@
+#partnerCon ul {
+    /* line them up horizontally */
+    display: flex;
+    text-align: center;
+  
+    /* allow for scrolling */
+    overflow-x: auto;
+  
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+  #partnerCon ul > li {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: 5%;
+    padding: 5%;
+    background-color: #333;
+    margin: 9% 3%;
+  }

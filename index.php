@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../public/css/reset.css">
-    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <?php include("../templates/header.php");?>
+    <?php include("templates/header.php");?>
+    <main id="app">
     <section id="hero">
         <div>
             <div id="placeholderHero"><h1>Placeholder Hero Img</h1></div>
@@ -34,22 +35,30 @@
         </div>
     </section>
     <section id="action">
-        <div>
+      <card v-for="(action, index) in actionContent"
+      :paragraph="action.paragraph"
+      :key="index">
+</card>
+        <!-- <div>
             <img src="" alt="Icon 1">
             <p>Paragraph</p>
             <button>Action Btn 1</button>
-        </div>
-        <div>
-            <img src="" alt="Icon 2">
-            <p>Paragraph</p>
-            <button>Action Btn 2</button>
-        </div>
-        <div>
-            <img src="" alt="Icon 3">
-            <p>Paragraph</p>
-            <button>Action Btn 3</button>
+        </div> -->
+    </section>
+    <section id="partners">
+        <div id="partnerCon">
+            <ul>
+                <carousel v-for="(partner, index) in partnerContent"
+                :partID="partner.id"
+                :icon="partner.logo"
+                :key="index">
+            </carousel>
+            </ul>
         </div>
     </section>
-    <?php include("../templates/footer.php");?>
+</main>
+    <?php include("templates/footer.php");?>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 </html>
