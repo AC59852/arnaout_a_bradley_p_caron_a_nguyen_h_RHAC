@@ -45,6 +45,17 @@
             <button>Action Btn 1</button>
         </div> -->
     </section>
+    <section id="partners">
+        <div id="partnerCon">
+            <ul>
+                <carousel v-for="(partner, index) in partnerContent"
+                :partID="partner.id"
+                :icon="partner.logo"
+                :key="index">
+            </carousel>
+            </ul>
+        </div>
+    </section>
 </main>
     <?php include("templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
