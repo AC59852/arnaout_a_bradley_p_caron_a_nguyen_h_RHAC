@@ -10,6 +10,7 @@
 </head>
 <body>
     <?php include("../templates/header.php");?>
+    <main id="app">
     <section id="hero">
         <div>
             <div id="placeholderHero"><h1>Placeholder Hero Img</h1></div>
@@ -34,22 +35,19 @@
         </div>
     </section>
     <section id="action">
-        <div>
+      <poster v-for="(action, index) in actionContent"
+      :paragraph="action.paragraph"
+      :key="index">
+</poster>
+        <!-- <div>
             <img src="" alt="Icon 1">
             <p>Paragraph</p>
             <button>Action Btn 1</button>
-        </div>
-        <div>
-            <img src="" alt="Icon 2">
-            <p>Paragraph</p>
-            <button>Action Btn 2</button>
-        </div>
-        <div>
-            <img src="" alt="Icon 3">
-            <p>Paragraph</p>
-            <button>Action Btn 3</button>
-        </div>
+        </div> -->
     </section>
+</main>
     <?php include("../templates/footer.php");?>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+    <script src="../public/js/main.js"></script>
 </body>
 </html>
