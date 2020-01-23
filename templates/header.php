@@ -1,9 +1,7 @@
-<nav>
-<ul>
-<li><a href="#">Test1</a></li>
-<li><a href="#">Test2</a></li>
-<li><a href="#">Test3</a></li>
-<li><a href="#">Test4</a></li>
-
-</ul>
+<nav id="headerNav">
+<div class="headerIcons">
+<img src="../public/images/rhacLogo" alt="RHAC Logo">
+<h2>(nav bar)</h2>
+<img src="../public/images/hamMenu" alt="Nav Menu Icon">
+</div>
 </nav>
