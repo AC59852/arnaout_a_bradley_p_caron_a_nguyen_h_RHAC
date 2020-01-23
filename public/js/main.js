@@ -1,5 +1,5 @@
 // todo => use a key to track the current video, or just pass the video in as a ref to the function and grab its source
-Vue.component('poster', {
+Vue.component('card', {
     props: {
       paragraph: String
   

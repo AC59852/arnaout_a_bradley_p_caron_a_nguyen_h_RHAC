@@ -1,16 +1,15 @@
-<?php require('vendor/autoload.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/css/reset.css">
-    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <?php include("templates/header.php");?>
+    <?php include("../templates/header.php");?>
     <main id="app">
     <section id="hero">
         <div>
@@ -36,10 +35,10 @@
         </div>
     </section>
     <section id="action">
-      <poster v-for="(action, index) in actionContent"
+      <card v-for="(action, index) in actionContent"
       :paragraph="action.paragraph"
       :key="index">
-</poster>
+</card>
         <!-- <div>
             <img src="" alt="Icon 1">
             <p>Paragraph</p>
@@ -47,8 +46,8 @@
         </div> -->
     </section>
 </main>
-    <?php include("templates/footer.php");?>
+    <?php include("../templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
-    <script src="public/js/main.js"></script>
+    <script src="../public/js/main.js"></script>
 </body>
 </html>
