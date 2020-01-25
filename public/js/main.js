@@ -7,8 +7,9 @@ Vue.component('card', {
     template: `
     <div class="actionCon">
         <div class="actionIcon"><h3>Icon</h3></div>
+        <h4>Heading</h4>
       <p>{{ paragraph }}</p>
-      <a href="https://hivaidsconnection.ca/" class="actionBtn"><h4>Placeholder Btn</h4></a>
+      <a href="https://hivaidsconnection.ca/" class="actionBtn"><h5>Placeholder Btn</h5></a>
     </div>
     `
   })

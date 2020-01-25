@@ -1,1 +1,1 @@
-#partnerCon ul{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch}#partnerCon ul>li{flex-shrink:0;width:5%;padding:8%;background-color:#333;margin:9% 3%}/*# sourceMappingURL=partners.css.map */
+#partnerCon ul{display:flex;width:95%;margin:0 auto 9% auto;overflow-x:auto;-webkit-overflow-scrolling:touch}#partnerCon ul>li{flex-shrink:0;width:13%;padding:8%;background-color:#333}#partnerCon ul li{margin:0 3% 0 3%}#partners{margin-top:6%}#partners h2{text-align:center;margin-bottom:6%}/*# sourceMappingURL=partners.css.map */

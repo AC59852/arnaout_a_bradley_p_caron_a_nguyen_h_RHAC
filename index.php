@@ -17,14 +17,18 @@
             <h2>Tagline</h2>
         </div>
     </section>
-    <section id="about">
+    <section id="aboutSection">
+        <div id="about">
         <div id=aboutText>
             <h3>Heading</h3>
             <p>Paragraph</p>
         </div>
         <div id="placeholderAbout"></div>
+</div>
+    <h2>About</h2>
     </section>
     <section id="help">
+    <h2 class="hidden">Help Section</h2>
         <p id="helpPara1">Paragraph</p>
         <div id="helpBtns">
             <button>Button 1</button>
@@ -35,7 +39,8 @@
         </div>
     </section>
     <section id="action">
-      <card v-for="(action, index) in actionContent"
+    <h2 class="hidden">Call for Action Section</h2>
+      <card id="card" v-for="(action, index) in actionContent"
       :paragraph="action.paragraph"
       :key="index">
 </card>
@@ -46,9 +51,10 @@
         </div> -->
     </section>
     <section id="partners">
+    <h2>Our Partners</h2>
         <div id="partnerCon">
             <ul>
-                <carousel v-for="(partner, index) in partnerContent"
+                <carousel id="carousel" v-for="(partner, index) in partnerContent"
                 :partID="partner.id"
                 :icon="partner.logo"
                 :key="index">
