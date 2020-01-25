@@ -32,11 +32,14 @@
         color: white;
         padding: 1%;
     }
-    h4 {
+    h4, h5 {
         margin: 0 auto;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 6%;
     }
 }
 
-.actionCon:nth-child(2) {
+.actionCon:nth-child(3) {
     background-color: gray;
 }

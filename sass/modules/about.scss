@@ -1,6 +1,5 @@
 #about {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10%;
     #aboutText {
         flex-direction: column;
@@ -27,5 +26,13 @@
         background-color: lightgray;
         margin-right: 4%;
         margin-top: 5%;
+        margin-left: auto;
     }
+}
+
+#aboutSection {
+    h2 {
+        text-align: center;
+    }
+    margin-bottom: 8%;
 }

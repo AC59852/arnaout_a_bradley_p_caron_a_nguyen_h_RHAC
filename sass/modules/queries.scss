@@ -38,3 +38,116 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .headerIcons {
+        height: 8vw;
+        img {
+            width: 10%;
+        }
+    }
+
+    #hero {
+        div {
+            h1 {
+                padding-top: 20% !important;
+            }
+            h2 {
+                margin-bottom: 18.4%;
+            }
+        }
+    }
+    
+    #placeholderHero {
+        height: 60vw !important;
+    }
+
+    #aboutSection {
+        h2 {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 3% 0 3% 0;
+            font-size: 9vw;
+            text-transform: uppercase;
+        }
+
+        margin-bottom: 5%;
+
+        #about {
+            margin-top: 0;
+            margin-bottom: 0;
+            #placeholderAbout {
+                margin-left: auto;
+                margin-right: 0;
+                margin-top: 0;
+                background-color: #333;
+            }
+            #aboutText {
+                h3 {
+                    margin-top: 7%;
+                    height: 5vw;
+                    padding-top: 0;
+                }
+                p {
+                    margin-top: 12%;
+                    height: 25vw;
+                }
+    
+            } 
+        }
+        
+    }
+
+    #action {
+        display: flex;
+        justify-content: space-evenly;
+        #card {
+            width: 29%;
+            margin-bottom: 6%;
+        }
+
+        .actionIcon {
+            height: 7vw;
+            width: 50%;
+            margin-top: -5%;
+            margin-bottom: 10%;
+        }
+
+        .actionCon {
+            padding-bottom: 3%;
+            h4 {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                width: 60%;
+                margin-bottom: 15%;
+                font-size: 4vw;
+            }
+            a {
+                width: 45%;
+                margin-top: 9%;
+            }
+            p {
+                height: 19vw;
+            }
+        }
+    }
+
+    #partners {
+        h2 {
+            text-align: center;
+            margin-bottom: 6%;
+            background-color: #333;
+            color: white;
+            padding: 5% 0 5% 0;
+            font-size: 9vw;
+            text-transform: uppercase;
+        }
+        #carousel {
+            margin-bottom: 6%;
+            margin-left: -2%;
+        }
+    }
+
+}

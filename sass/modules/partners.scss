@@ -1,6 +1,8 @@
 #partnerCon ul {
     /* line them up horizontally */
     display: flex;
+    width: 95%;
+    margin: 0 auto 9% auto;
   
     /* allow for scrolling */
     overflow-x: auto;
@@ -11,8 +13,20 @@
   #partnerCon ul > li {
     /* make sure the width is honored */
     flex-shrink: 0;
-    width: 5%;
+    width: 13%;
     padding: 8%;
     background-color: #333;
-    margin: 9% 3%;
+  }
+
+  #partnerCon ul li {
+    margin: 0 3% 0 3%;
+  }
+
+  #partners {
+    margin-top: 6%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 6%;
+    }
   }
