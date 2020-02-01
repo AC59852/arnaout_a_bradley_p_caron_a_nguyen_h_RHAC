@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
     <title>Document</title>
@@ -12,9 +13,10 @@
     <?php include("templates/header.php");?>
     <main id="app">
     <section id="hero">
-        <div>
-            <div id="placeholderHero"><h1>Placeholder Hero Img</h1></div>
-            <h2>Tagline</h2>
+        <object data="public/images/RHAC.svg" type="image/svg+xml"></object>
+        <div id="heroCon">
+            <div id="heroImg"><img src="public/images/hero.png"></div>
+            <h2>no shame.</h2>
         </div>
     </section>
     <section id="aboutSection">

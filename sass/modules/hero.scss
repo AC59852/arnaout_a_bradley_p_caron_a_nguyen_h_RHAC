@@ -1,9 +1,7 @@
 #hero {
-    background-color: #333;
     div {
-        #placeholderHero {
+        #hero {
             height: 75vw;
-            background-color: lightgray;
 
             h1 {
                 color: black;
@@ -12,10 +10,29 @@
                 padding-top: 34%;
             }
         }
-        h2 {
-            margin-top: -20%;
-            margin-bottom: 20%;
-            text-align: center;
-        }
+    }
+}
+
+#heroImg img {
+    width: 100%;
+}
+
+#hero object {
+    position: absolute;
+    width: 8%;
+    top: 3%;
+    left: 3%;
+}
+
+#heroCon {
+    h2 {
+        text-transform: uppercase;
+        font-size: 10vw;
+        width: 40%;
+        color: #ffe274;
+        margin-top: -28%;
+        margin-bottom: 28%;
+        margin-left: 4%;
+        font-weight: 880;
     }
 }

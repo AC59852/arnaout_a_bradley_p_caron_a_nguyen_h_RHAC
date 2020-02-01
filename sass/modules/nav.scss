@@ -1,7 +1,5 @@
 .headerIcons {
     display: flex;
-    justify-content: space-between;
-    background-color: #363636;
     height: 15.5vw;
     color: white;
     font-family: arial;
@@ -10,8 +8,10 @@
 }
 
 .headerIcons img {
-    background-color: #040404;
-    width: 20%;
+    display: flex;
+    width: 10%;
+    margin-left: auto;
+    margin-right: 3%;
 }
 
 .headerIcons h2 {
