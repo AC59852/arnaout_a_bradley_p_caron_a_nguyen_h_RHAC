@@ -27,15 +27,9 @@
         </div>
         <div id="placeholderAbout"></div>
 </div>
-    <h2>About</h2>
     </section>
     <section id="help">
-    <h2 class="hidden">Help Section</h2>
-        <p id="helpPara1">Paragraph</p>
-        <div id="helpBtns">
-            <button>Button 1</button>
-            <button>Button 2</button>
-        </div>
+    <h2 class="">Get Involved</h2>
         <div id="helpPopup">
             <p>Placeholder Paragraph</p>
         </div>
