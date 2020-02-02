@@ -1,19 +1,145 @@
-.headerIcons {
-    display: flex;
-    height: 15.5vw;
-    color: white;
-    font-family: arial;
-    position: fixed;
-    width: 100%;
+
+// It actually starts here
+
+$menu-bg: #58BAB5;
+$menu-color: #ffffff;
+$menu-font-size: 9vw;
+$menu-zindex: 1100;
+$hamburger-color: #fff;
+$hamburger-width: 50px;
+$hamburger-height: 50px;
+$hamburger-zindex: $menu-zindex + 10;
+
+
+#menu {
+  background: $menu-bg;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+  // For some sweet fadez
+  visibility: hidden;
+  width: 100%;
+  z-index: $menu-zindex;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+
+    @for $i from 1 through 10 {
+      li:nth-child(#{$i}) {
+        animation-delay: $i*0.1s;
+      }
+    }
+
+    li {
+      animation-duration: 1.0s;
+      animation-fill-mode: both;
+      animation-name: fadeInUp;
+    }
+  }
+
+  ul {
+    &:hover {
+      a {
+        opacity: 0.5;
+      }
+    }
+
+    a {
+      // Stops it being a twitchy mess in chrome :pray:
+      // https://www.binarymoon.co.uk/2014/02/fixing-css-transitions-in-google-chrome/
+      -webkit-transform: translateZ(0);
+      transition: opacity 0.3s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .main-nav {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $menu-color;
+      display: block;
+      font-size: $menu-font-size;
+      font-weight: bold;
+      padding: 1rem 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
 }
 
-.headerIcons img {
-    display: flex;
-    width: 10%;
-    margin-left: auto;
-    margin-right: 3%;
-}
+.toggle-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 5%;
+  outline: none;
+  position: fixed;
+  right: 15%;
+  z-index: $hamburger-zindex;
 
-.headerIcons h2 {
-    margin-top: 4%;
+  span {
+    background-color: $hamburger-color;
+    content: "";
+    display: block;
+    height: 1.4vw;
+    position: absolute;
+    transition: background-color 0.1s ease-in-out, top 0.1s 0.1s ease-out,  transform 0.1s linear;
+    width: 10vw;
+
+    &:before, &:after {
+      background-color: $hamburger-color;
+      content: "";
+      display: block;
+      height: 1.4vw;
+      position: absolute;
+      transition: background-color 0.1s ease-in-out, top 0.1s 0.1s ease-out,  transform 0.1s linear;
+      width: 10vw;
+    }
+
+    &:before {
+      top: 2.7vw;
+    }
+
+    &:after {
+      top: -2.7vw;
+    }
+  }
+
+  &.active {
+    span {
+      background-color: transparent;
+      transition: background 0.1s ease-out;
+
+      &:before, &:after {
+        transition: top 0.1s ease-out, transform 0.1s 0.1s ease-out;
+      }
+
+      &:before {
+        top: 0;
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+
+      &:after {
+        top: 0;
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+    }
+  }
 }
