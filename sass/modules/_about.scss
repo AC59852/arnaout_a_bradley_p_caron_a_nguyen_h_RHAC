@@ -1,32 +1,31 @@
-#about {
-    display: flex;
-    margin-bottom: 10%;
+#aboutSection {
+    margin-bottom: 40%;
     #aboutText {
-        flex-direction: column;
-        margin-left: 5%;
+        width: 55%;
+        margin-left: 4%;
         h3 {
-            text-align: center;
-            width: 25vw;
-            height: 5vw;
-            padding-top: 5px;
-            background-color: gray;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 6vw;
+            margin-top: -10%;
+            margin-bottom: 4%;
         }
         p {
-            background-color: gray;
-            width: 25vw;
-            height: 16vw;
-            margin-top: 41%;
-            text-align: center;
-            padding-top: 55px;
+            font-size: 4vw;
+            line-height: 4.8vw;
+            margin-bottom: 3%;
         }
     }
-    #placeholderAbout {
-        height: 45vw;
-        width: 45%;
-        background-color: lightgray;
-        margin-right: 4%;
-        margin-top: 5%;
-        margin-left: auto;
+    #aboutImg {
+        background-image: url('../images/RHAC_groupshot.jpg');
+        height: 55vw;
+        width: 55vw;
+        border-radius: 50%;
+        position: absolute;
+        top: 70vw;
+        background-position: 95% 25%;
+        background-size: 190%;
+        left: 60%;
     }
 }
 

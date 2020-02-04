@@ -20,12 +20,13 @@
         </div>
     </section>
     <section id="aboutSection">
-        <div id="about">
-        <div id=aboutText>
-            <h3>Heading</h3>
-            <p>Paragraph</p>
+        <div id="aboutText">
+            <h3>Get to Know Us</h3>
+            <p>Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV.</p>
+            <p>We also work with anyone who provides services to people with, or at risk of, HIV and HCV. All services are free and confidential.</p>
         </div>
-        <div id="placeholderAbout"></div>
+        <div id="aboutImg">
+        </div>
 </div>
     </section>
     <section id="help">
