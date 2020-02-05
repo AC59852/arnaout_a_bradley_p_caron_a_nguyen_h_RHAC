@@ -26,6 +26,7 @@
             <p>We also work with anyone who provides services to people with, or at risk of, HIV and HCV. All services are free and confidential.</p>
         </div>
         <div id="aboutImg">
+            <img src="public/images/RHAC_groupshot.jpg" alt="">
         </div>
 </div>
     </section>

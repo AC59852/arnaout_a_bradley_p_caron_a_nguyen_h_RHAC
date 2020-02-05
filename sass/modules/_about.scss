@@ -1,5 +1,6 @@
 #aboutSection {
     margin-bottom: 40%;
+    overflow-x: hidden;
     #aboutText {
         width: 55%;
         margin-left: 4%;
@@ -17,15 +18,19 @@
         }
     }
     #aboutImg {
-        background-image: url('../images/RHAC_groupshot.jpg');
-        height: 55vw;
-        width: 55vw;
+        width: 50vw;
+        height: 50vw;
         border-radius: 50%;
-        position: absolute;
-        top: 70vw;
-        background-position: 95% 25%;
-        background-size: 190%;
-        left: 60%;
+        overflow: hidden;
+        margin-left: 60%;
+        margin-top: -55%;
+        margin-bottom: 50%;
+        img {
+            position: relative;
+            width: 250%;
+            top: -30%;
+            left: -120%;
+        }
     }
 }
 
