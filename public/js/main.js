@@ -33,7 +33,7 @@ Vue.component('card', {
 
   Vue.component('carousel', {
     props: {
-      partID: String,
+      partid: String,
       icon: String
   
     },
