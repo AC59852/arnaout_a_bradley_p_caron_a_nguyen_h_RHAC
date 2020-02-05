@@ -1,28 +1,28 @@
 #aboutSection {
     margin-bottom: 40%;
+    margin-top: -10%;
     overflow-x: hidden;
     #aboutText {
-        width: 55%;
+        width: 50%;
         margin-left: 4%;
         h3 {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 6vw;
-            margin-top: -10%;
-            margin-bottom: 4%;
+            font-size: 5.8vw;
+            margin-bottom: 10%;
         }
         p {
-            font-size: 4vw;
+            font-size: 3vw;
             line-height: 4.8vw;
             margin-bottom: 3%;
         }
     }
     #aboutImg {
-        width: 50vw;
-        height: 50vw;
+        width: 55vw;
+        height: 55vw;
         border-radius: 50%;
         overflow: hidden;
-        margin-left: 60%;
+        margin-left: 55%;
         margin-top: -55%;
         margin-bottom: 50%;
         img {
