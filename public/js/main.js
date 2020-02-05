@@ -1,4 +1,21 @@
 // todo => use a key to track the current video, or just pass the video in as a ref to the function and grab its source
+
+// just using this as a working source for right now
+let nav = document.querySelector(".toggle-menu"),
+    navBtns = document.querySelectorAll(".navBtn");
+
+nav.addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#menu").classList.toggle("open");
+});
+
+navBtns.forEach(btn => btn.addEventListener("click", function() {
+  nav.classList.toggle("active");
+  document.querySelector("#menu").classList.toggle("open");
+}))
+
+
+
 Vue.component('card', {
     props: {
       paragraph: String
@@ -16,7 +33,7 @@ Vue.component('card', {
 
   Vue.component('carousel', {
     props: {
-      partID: String,
+      partid: String,
       icon: String
   
     },
@@ -56,7 +73,10 @@ Vue.component('card', {
   
   
     methods: {
-  
+
+      testOn: function() {
+        console.log("test");
+      }
     }
   });
   

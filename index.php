@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
     <title>Document</title>
@@ -12,28 +13,26 @@
     <?php include("templates/header.php");?>
     <main id="app">
     <section id="hero">
-        <div>
-            <div id="placeholderHero"><h1>Placeholder Hero Img</h1></div>
-            <h2>Tagline</h2>
+        <object data="public/images/RHAC.svg" type="image/svg+xml"></object>
+        <div id="heroCon">
+            <div id="heroImg"><img src="public/images/hero.png"></div>
+            <h2>no shame.</h2>
         </div>
     </section>
     <section id="aboutSection">
-        <div id="about">
-        <div id=aboutText>
-            <h3>Heading</h3>
-            <p>Paragraph</p>
+        <div id="aboutText">
+            <h3>Get to Know Us</h3>
+            <p>Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV.</p>
+            <p>We also work with anyone who provides services to people with, or at risk of, HIV and HCV. All services are free and confidential.</p>
+            <a href="">Learn More</a>
         </div>
-        <div id="placeholderAbout"></div>
+        <div id="aboutImg">
+            <img src="public/images/RHAC_groupshot.jpg" alt="">
+        </div>
 </div>
-    <h2>About</h2>
     </section>
     <section id="help">
-    <h2 class="hidden">Help Section</h2>
-        <p id="helpPara1">Paragraph</p>
-        <div id="helpBtns">
-            <button>Button 1</button>
-            <button>Button 2</button>
-        </div>
+    <h2 class="">Get Involved</h2>
         <div id="helpPopup">
             <p>Placeholder Paragraph</p>
         </div>
