@@ -3,33 +3,33 @@
     margin-top: -10%;
     overflow-x: hidden;
     #aboutText {
-        width: 50%;
+        width: 60%;
         margin-left: 4%;
         h3 {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 5.8vw;
+            font-size: 6vw;
             margin-bottom: 10%;
         }
         p {
-            font-size: 3vw;
+            font-size: 3.8vw;
             line-height: 4.8vw;
             margin-bottom: 3%;
         }
     }
     #aboutImg {
-        width: 55vw;
-        height: 55vw;
+        width: 48vw;
+        height: 48vw;
         border-radius: 50%;
         overflow: hidden;
-        margin-left: 55%;
+        margin-left: 64%;
         margin-top: -55%;
         margin-bottom: 50%;
         img {
             position: relative;
             width: 250%;
             top: -30%;
-            left: -120%;
+            left: -122%;
         }
     }
 }
