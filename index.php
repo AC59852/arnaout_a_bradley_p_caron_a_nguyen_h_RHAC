@@ -1,3 +1,10 @@
+<?php
+    require_once 'load.php';
+        $infoTable = 'tbl_info';
+        $getInfo = getAll($infoTable);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,22 +27,26 @@
         </div>
     </section>
     <section id="aboutSection">
+    <div>
         <div id="aboutText">
-            <h3>Get to Know Us</h3>
-            <p>Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV.</p>
-            <p>We also work with anyone who provides services to people with, or at risk of, HIV and HCV. All services are free and confidential.</p>
-            <a href="">Learn More</a>
-        </div>
-        <div id="aboutImg">
-            <img src="public/images/RHAC_groupshot.jpg" alt="">
-        </div>
+      <h3>{{ about.title}}</h3>
+      <p>{{ about.para }}</p>
+      <p>{{ about.para2 }}</p>
+      <a href="">Learn More</a>
+  </div>
+  <div id="aboutImg">
+      <img v-bind:src="about.img" alt="">
+  </div>
+</div>
 </div>
     </section>
     <section id="help">
-    <h2 class="">Get Involved</h2>
-        <div id="helpPopup">
-            <p>Placeholder Paragraph</p>
+    <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
+        <div class="infoObject">
+            <h2><?php echo $row['title']; ?></h2>
+            <h4><?php echo $row['description']; ?></h4>
         </div>
+    <?php endwhile;?>
     </section>
     <section id="action">
     <h2 class="hidden">Call for Action Section</h2>

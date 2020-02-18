@@ -12,8 +12,7 @@ nav.addEventListener("click", function() {
 navBtns.forEach(btn => btn.addEventListener("click", function() {
   nav.classList.toggle("active");
   document.querySelector("#menu").classList.toggle("open");
-}))
-
+}));
 
 
 Vue.component('card', {
@@ -47,6 +46,13 @@ Vue.component('card', {
     el: "#app",
   
     data: {
+
+      about: {
+        //isadmin: true,
+        //isLoggedIn: true,
+        //avatar: '../images/thor.png'
+      },
+
   // replace this with database content later
       actionContent: [
         { paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
@@ -68,14 +74,30 @@ Vue.component('card', {
         {id: "12", logo: "Partner12"},
         {id: "13", logo: "Partner13"},
         {id: "14", logo: "Partner14"}
-      ]
+      ],
     },
-  
-  
+    
+    created: function(){
+      console.log("this is working");
+      this.fetchAbout();
+    },
+
     methods: {
 
       testOn: function() {
         console.log("test");
+      },
+
+      fetchAbout() {
+        const url = './includes/index.php?about=true';
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          this.about =  data[0];
+        })
+        .catch((err) => console.log(err))
       }
     }
   });
