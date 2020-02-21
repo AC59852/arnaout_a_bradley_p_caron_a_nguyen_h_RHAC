@@ -29,7 +29,7 @@
     <section id="aboutSection">
     <div>
         <div id="aboutText">
-      <h3>{{ about.title}}</h3>
+      <h3>{{ about.title }}</h3>
       <p>{{ about.para }}</p>
       <p>{{ about.para2 }}</p>
       <a href="">Learn More</a>
@@ -43,8 +43,16 @@
     <section id="help">
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
-            <h2><?php echo $row['title']; ?></h2>
-            <h4><?php echo $row['description']; ?></h4>
+        <ul>
+            <li><h2><?php echo $row['title']; ?></h2></li>
+            <li><p><?php echo $row['description']; ?></p></li>
+            <li><p><?php echo $row['description2']; ?></p></li>
+            <li><p><?php echo $row['description3']; ?></p></li>
+            <li><p><?php echo $row['description4']; ?></p></li>
+            <li><p><?php echo $row['description5']; ?></p></li>
+            <li><p><?php echo $row['description6']; ?></p></li>
+            <li><p><?php echo $row['description7']; ?></p></li>
+            <li><a href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a></li>
         </div>
     <?php endwhile;?>
     </section>
@@ -64,11 +72,7 @@
     <h2>Our Partners</h2>
         <div id="partnerCon">
             <ul>
-                <carousel id="carousel" v-for="(partner, index) in partnerContent"
-                :partID="partner.id"
-                :icon="partner.logo"
-                :key="index">
-            </carousel>
+                <li v-for="partner in partners"><a href=""><img v-bind:src="partner.img" alt="partner logo"></a></li>
             </ul>
         </div>
     </section>

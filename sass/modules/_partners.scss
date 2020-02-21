@@ -1,32 +1,35 @@
+  
 #partnerCon ul {
-    /* line them up horizontally */
-    display: flex;
-    width: 95%;
-    margin: 0 auto 9% auto;
-  
-    /* allow for scrolling */
-    overflow-x: auto;
-  
-    /* make it smooth on iOS */
-    -webkit-overflow-scrolling: touch;
-  }
-  #partnerCon ul > li {
-    /* make sure the width is honored */
-    flex-shrink: 0;
-    width: 13%;
-    padding: 8%;
-    background-color: #333;
-  }
+  /* line them up horizontally */
+  display: flex;
+  width: 95%;
+  margin: 0 auto 9% auto;
 
-  #partnerCon ul li {
-    margin: 0 3% 0 3%;
-  }
+  /* allow for scrolling */
+  overflow-x: auto;
 
-  #partners {
-    margin-top: 6%;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+#partnerCon ul > li {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 45%;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 6%;
+#partnerCon ul li {
+  a {
+    img {
+      width: 65%;
     }
   }
+}
+
+#partners {
+  margin-top: 6%;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 6%;
+  }
+}
