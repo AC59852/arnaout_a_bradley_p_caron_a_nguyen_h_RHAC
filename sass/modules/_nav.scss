@@ -146,14 +146,14 @@ $hamburger-zindex: $menu-zindex + 10;
 
   &.navFill {
     span {
-      background-color: black;
+      background-color: #58BAB5;
 
       &:before {
-        background-color: black;
+        background-color: #58BAB5;
       }
 
       &:after {
-        background-color: black;
+        background-color: #58BAB5;
       }
     }
   }

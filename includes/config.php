@@ -1,16 +1,16 @@
 <?php 
 
     $db_dsn = array(
-        'host' => 'localhost',
-        'dbname' => 'db_rhac',
+        'host' => 'localhostus-cdbr-iron-east-04.cleardb.net',
+        'dbname' => 'heroku_2edf14057ac8a67',
         'charset' => 'utf8',
     );
     
     $dsn = 'mysql:' . http_build_query($db_dsn, '', ';');
 
     // Set up connection credentials
-    $db_user = 'root';
-    $db_pass = '';
+    $db_user = 'b4bf75d03a80fc';
+    $db_pass = 'cf824c9c';
 
     $pdo = new PDO($dsn, $db_user, $db_pass);
 

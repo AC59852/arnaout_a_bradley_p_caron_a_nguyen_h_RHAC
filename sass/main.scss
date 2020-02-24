@@ -19,3 +19,8 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.noscroll {
+    height: 100%;
+    overflow: hidden;
+}

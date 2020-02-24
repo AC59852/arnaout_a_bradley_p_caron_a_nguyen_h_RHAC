@@ -3,7 +3,8 @@ let nav = document.querySelector(".toggle-menu"),
 navLines = document.querySelector(".navLines")
 navBtns = document.querySelectorAll(".navBtn"),
 navLines = document.querySelector(".navLines"),
-helpButton = document.querySelectorAll(".helpBtn");
+helpButton = document.querySelectorAll(".helpBtn"),
+main = document.querySelector("body");
 
 
 helpButton.forEach(button => button.addEventListener("click", function() {
@@ -14,6 +15,7 @@ this.classList.toggle("reveal");
 nav.addEventListener("click", function() {
 this.classList.toggle("active");
 document.querySelector("#menu").classList.toggle("open");
+main.classList.toggle("noscroll");
 });
 
 navBtns.forEach(btn => btn.addEventListener("click", function() {
