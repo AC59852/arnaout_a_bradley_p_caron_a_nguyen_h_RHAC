@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
@@ -26,35 +27,37 @@
             <h2>no shame.</h2>
         </div>
     </section>
+    <section id="help">
+    <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
+        <div class="infoObject">
+        <ul>
+            <li class="helpBtn"><h2><?php echo $row['title']; ?></h2><img src="public/images/hamburger_white.svg" alt="">
+            <p class="helpContent"><?php echo $row['description']; ?></p>
+            <p><?php echo $row['description2']; ?></p>
+            <p><?php echo $row['description3']; ?></p>
+            <p><?php echo $row['description4']; ?></p>
+            <p><?php echo $row['description5']; ?></p>
+            <p><?php echo $row['description6']; ?></p>
+            <p><?php echo $row['description7']; ?></p>
+            <a href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
+        </li>
+        </div>
+    <?php endwhile;?>
+    </section>
     <section id="aboutSection">
     <div>
         <div id="aboutText">
       <h3>{{ about.title }}</h3>
+      <!-- lots of text, needs to be figured out -->
       <p>{{ about.para }}</p>
       <p>{{ about.para2 }}</p>
-      <a href="">Learn More</a>
+      <a href="https://hivaidsconnection.ca/">Learn More</a>
   </div>
   <div id="aboutImg">
       <img v-bind:src="about.img" alt="">
   </div>
 </div>
 </div>
-    </section>
-    <section id="help">
-    <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
-        <div class="infoObject">
-        <ul>
-            <li><h2><?php echo $row['title']; ?></h2></li>
-            <li><p><?php echo $row['description']; ?></p></li>
-            <li><p><?php echo $row['description2']; ?></p></li>
-            <li><p><?php echo $row['description3']; ?></p></li>
-            <li><p><?php echo $row['description4']; ?></p></li>
-            <li><p><?php echo $row['description5']; ?></p></li>
-            <li><p><?php echo $row['description6']; ?></p></li>
-            <li><p><?php echo $row['description7']; ?></p></li>
-            <li><a href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a></li>
-        </div>
-    <?php endwhile;?>
     </section>
     <section id="action">
     <h2 class="hidden">Call for Action Section</h2>
@@ -80,5 +83,6 @@
     <?php include("templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
     <script src="public/js/main.js"></script>
+    <script src="public/js/static.js"></script>
 </body>
 </html>
