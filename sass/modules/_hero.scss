@@ -13,13 +13,19 @@
     }
 }
 
+#heroImg {
+    overflow-x: hidden;
+}
+
 #heroImg img {
-    width: 100%;
+    width: 200%;
+    margin-left: -40%;
+    height: 105vw;
 }
 
 #hero object {
     position: absolute;
-    width: 8%;
+    width: 11%;
     top: 3%;
     left: 3%;
 }
@@ -27,10 +33,10 @@
 #heroCon {
     h2 {
         text-transform: uppercase;
-        font-size: 10vw;
+        font-size: 18vw;
         width: 40%;
         color: #ffe274;
-        margin-top: -28%;
+        margin-top: -45%;
         margin-bottom: 28%;
         margin-left: 4%;
         font-weight: 880;
