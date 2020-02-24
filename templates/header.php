@@ -1,7 +1,7 @@
 <header id="header">
   <nav class="nav">
     <button class="toggle-menu">
-      <span></span>
+      <span class="navLines"></span>
     </button>
   </nav>
   <div id="menu" class="">

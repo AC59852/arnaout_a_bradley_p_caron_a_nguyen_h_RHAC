@@ -1,32 +1,46 @@
-#help {
-    #helpPara1 {
+.infoObject {
+    background-color: #C43E40;
+    color: white;
+    ul {
+        li {
+            display: flex;
+            flex-direction: column;
+            height:14.3vw;
+            transition: height 0.6s ease-in-out;
+            overflow-y: hidden;
+            h2 {
+                padding: 5% 0 5% 3%;
+                border-bottom: 3px white solid;
+                width: 97%;
+                font-size: 4vw;
+            }
+            img {
+                cursor: pointer;
+                width: 5%;
+                position: absolute;
+                margin-top: 4%;
+                right: 1%;
+            }
+            p {
+                width: 95%;
+                font-size: 5vw;
+                line-height: 5.7vw;
+                margin: 3% auto 0 auto;
+            }
+             a {
+                 margin-left: 2%;
+             }
+        }
+        
+    }
+}
 
-        text-align: center;
-        height: 27vw;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 20%;
-        background-color: lightgray;
-        font-size: 5vw;
-    }
-    #helpBtns {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 7%;
-        button {
-            border: none;
-        background-color: gray;
-        padding: 4%;
-        }
-    }
-    #helpPopup {
-        margin: 6% auto;
-        width: 70%;
-        background-color: lightgray;
-        height: 20vw;
-        p {
-            text-align: center;
-            padding-top: 12%;
-        }
-    }
-    }
+.reveal {
+    height: 135vw !important;
+}
+
+.helpButton {
+    width: 50%;
+    height: 200px;
+    background-color: black;
+}

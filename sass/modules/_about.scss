@@ -1,6 +1,6 @@
 #aboutSection {
+    margin-top: 20%;
     margin-bottom: 40%;
-    margin-top: -10%;
     overflow-x: hidden;
     #aboutText {
         width: 60%;
@@ -12,7 +12,7 @@
             margin-bottom: 10%;
         }
         p {
-            font-size: 3.8vw;
+            font-size: 2.9vw;
             line-height: 4.8vw;
             margin-bottom: 3%;
         }
@@ -32,18 +32,18 @@
         }
     }
     #aboutImg {
-        width: 48vw;
-        height: 48vw;
+        width: 52vw;
+        height: 52vw;
         border-radius: 50%;
         overflow: hidden;
-        margin-left: 64%;
-        margin-top: -60%;
+        margin-left: 66%;
+        margin-top: -70%;
         margin-bottom: 50%;
         img {
             position: relative;
-            width: 250%;
+            width: 200%;
             top: -30%;
-            left: -122%;
+            left: -100%;
         }
     }
 }
