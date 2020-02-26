@@ -28,3 +28,17 @@
 
         return $result2;
     }
+
+    function getHelp($pdo) {
+        $getHelp = 'SELECT * FROM tbl_help';
+        $runQuery3 = $pdo->query($getHelp);
+
+        $result3 = array();
+
+        while($row3 = $runQuery3->fetch(PDO::FETCH_ASSOC)) {
+            // push each row of data into our arry to make it easy to iterate over
+            $result3[] = $row3;
+        }
+
+        return $result3;
+    }

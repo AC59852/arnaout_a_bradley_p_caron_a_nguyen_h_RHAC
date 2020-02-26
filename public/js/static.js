@@ -4,23 +4,29 @@ navLines = document.querySelector(".navLines")
 navBtns = document.querySelectorAll(".navBtn"),
 navLines = document.querySelector(".navLines"),
 helpButton = document.querySelectorAll(".helpBtn"),
-main = document.querySelector("body");
+main = document.querySelector("body"),
+navWrapper = document.querySelector(".navWrapper");
 
 
-helpButton.forEach(button => button.addEventListener("click", function() {
+helpButton.forEach(button => button.addEventListener("click", function(e) {
 console.log("this worked");
 this.classList.toggle("reveal");
 }));
+
 
 nav.addEventListener("click", function() {
 this.classList.toggle("active");
 document.querySelector("#menu").classList.toggle("open");
 main.classList.toggle("noscroll");
+if (this.classList.contains("noBck")) {
+    navLines.classList.toggle("navBck");
+}
 });
 
 navBtns.forEach(btn => btn.addEventListener("click", function() {
 nav.classList.toggle("active");
 document.querySelector("#menu").classList.toggle("open");
+main.classList.toggle("noscroll");
 }));
 
 
@@ -29,8 +35,10 @@ document.querySelector("#menu").classList.toggle("open");
     var waypoint = new Waypoint({
         element: document.querySelector('#hero'),
         handler: function(direction) {
-            nav.classList.remove("navFill");
+            navWrapper.classList.remove("navFill");
+            navLines.classList.remove("navBck");
             console.log("hit the first waypoint");
+            nav.classList.remove("noBck");
         },
         offset: -120
     });
@@ -39,8 +47,55 @@ document.querySelector("#menu").classList.toggle("open");
         element: document.querySelector('#help'),
         handler: function(direction) {
             console.log("hit the second waypoint");
-            nav.classList.add("navFill");
+            navLines.classList.add("navBck");
+            navWrapper.classList.add("navFill");
+            nav.classList.add("noBck");
         },
         offset: 105
+    });
+
+    var waypoint3 = new Waypoint({
+        element: document.querySelector('#aboutSection'),
+        handler: function(direction) {
+            console.log("hit the third waypoint");
+            navLines.classList.add("navBck");
+            navWrapper.classList.add("navFill");
+            nav.classList.add("noBck");
+        },
+        offset: 100
+    });
+
+    var waypoint4 = new Waypoint({
+        element: document.querySelector('#actionSection'),
+        handler: function(direction) {
+            console.log("hit the fourth waypoint");
+            navLines.classList.add("navBck");
+            navWrapper.classList.add("navFill");
+            nav.classList.add("noBck");
+        },
+        offset: -125
+    });
+
+    var waypoint5 = new Waypoint({
+        element: document.querySelector('#action'),
+        handler: function(direction) {
+            console.log("hit the fifth waypoint");
+            navLines.classList.add("navBck");
+            navWrapper.classList.add("navFill");
+            nav.classList.add("noBck");
+        },
+        offset: -305
+    });
+    
+
+    var waypoint6 = new Waypoint({
+        element: document.querySelector('#partners'),
+        handler: function(direction) {
+            console.log("hit sixth waypoint");
+            navLines.classList.add("navBck");
+            navWrapper.classList.add("navFill");
+            nav.classList.add("noBck");
+        },
+        offset: -255
     });
 

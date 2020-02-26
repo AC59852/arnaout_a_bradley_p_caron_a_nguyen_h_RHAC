@@ -14,4 +14,11 @@
 
         echo json_encode($partners);
     }
+
+    if (isset($_GET['help'])) {
+        getHelp($pdo);
+        $help = getHelp($pdo);
+
+        echo json_encode($help);
+    }
     ?>

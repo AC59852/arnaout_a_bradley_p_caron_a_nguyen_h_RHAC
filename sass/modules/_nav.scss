@@ -74,7 +74,7 @@ $hamburger-zindex: $menu-zindex + 10;
     a {
       color: $menu-color;
       display: block;
-      font-size: $menu-font-size;
+      font-size: 9vw;
       font-weight: bold;
       padding: 1rem 1rem;
       text-decoration: none;
@@ -144,18 +144,23 @@ $hamburger-zindex: $menu-zindex + 10;
     }
   }
 
-  &.navFill {
-    span {
-      background-color: #58BAB5;
 
-      &:before {
-        background-color: #58BAB5;
-      }
+}
 
-      &:after {
-        background-color: #58BAB5;
-      }
-    }
+.navBck {
+  outline: solid 1px black;
+  &:before {
+    outline: solid 1px black;
   }
+  &:after {
+    outline: solid 1px black;
+  }
+}
+
+.navFill {
+  top: 5%;
+  outline: black;
+  position: fixed;
+  right: 15%;
 
 }

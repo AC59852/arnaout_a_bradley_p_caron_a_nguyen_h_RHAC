@@ -12,22 +12,30 @@ Vue.component('card', {
     },
     template: `
     <div class="actionCon">
-        <div class="actionIcon"><h3>Icon</h3></div>
         <h4>Heading</h4>
+        <div class="actionIcon"><h3>Icon</h3></div>
       <p>{{ paragraph }}</p>
       <a href="https://hivaidsconnection.ca/" class="actionBtn"><h5>Placeholder Btn</h5></a>
     </div>
     `
   })
 
-  Vue.component('carousel', {
+  Vue.component('contact', {
     props: {
-      partid: String,
+      heading: String,
+      content1: String,
+      content2: String,
       icon: String
   
     },
     template: `
-    <li><a href="#"><div class="partner"><h5>{{icon}}</h5></div></a></li>
+    <div class="contactCon">
+      <div><img :src="'public/images/' + icon" alt="Contact Icon">
+            <h4>{{ heading }}</h4>
+            <h5>{{ content1 }}</h5>
+            <h5 class="contact2">{{ content2 }}</h5>
+      </div>
+    </div>
     `
   })
   
@@ -42,9 +50,19 @@ Vue.component('card', {
         //isLoggedIn: true,
         //avatar: '../images/thor.png'
       },
+
       partners: {
 
       },
+
+      help: {
+
+      },
+
+      contactContent: [
+        {heading: "call", content1: "+1 (866) 920-1601", content2: " ", icon: "phone.svg"},
+        {heading: "hours", content1: "Monday - Friday", content2: "9:00 AM - 5:00 PM", icon: "clock.svg"}
+      ],
 
   // replace this with database content later
       actionContent: [
@@ -58,6 +76,7 @@ Vue.component('card', {
       console.log("this is working");
       this.fetchAbout();
       this.fetchPartners();
+      this.fetchHelp();
     },
 
     methods: {
@@ -86,6 +105,18 @@ Vue.component('card', {
         .then(data => {
           console.log(data);
           this.partners =  data;
+        })
+        .catch((err) => console.log(err))
+      },
+
+      fetchHelp() {
+        const url = './includes/index.php?help=true';
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          this.help =  data;
         })
         .catch((err) => console.log(err))
       }
