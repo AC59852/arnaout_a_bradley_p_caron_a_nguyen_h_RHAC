@@ -32,7 +32,7 @@
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
         <ul>
-            <li class="helpBtn"><span><h2><?php echo $row['title']; ?></h2></span>
+            <li class="helpBtn"><span class="helpTitle"><h2><?php echo $row['title']; ?></h2></span>
             <p class="helpContent"><?php echo $row['description']; ?></p>
             <p><?php echo $row['description2']; ?></p>
             <p><?php echo $row['description3']; ?></p>
