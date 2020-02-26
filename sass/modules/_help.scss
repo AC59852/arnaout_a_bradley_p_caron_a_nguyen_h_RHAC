@@ -11,7 +11,7 @@
             .helpTitle {
                 display: flex;
                 flex-direction: row;
-                padding-bottom: 9%;
+                padding-bottom: 14%;
             }
             h2 {
                 border-top: 3px white solid;
@@ -25,10 +25,10 @@
             img {
                 cursor: pointer;
                 width: 5%;
-                padding-left: 3%;
-                background-color: #c43e40;
+                right: 3%;
+                position: absolute;
+                margin-top: 6%;
                 transform: rotateX(180deg);
-                border-bottom: 3px white solid;
             }
             p {
                 width: 95%;
