@@ -1,45 +1,42 @@
-#action {
-    margin-top: 15%;
-}
-
-.actionCon {
-    background-color: lightgray;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    .actionIcon {
-        width: 30%;
-        background-color: #333;
-        height: 18vw;
-        margin: 0 auto;
-        h3 {
-            color: white;
+#actionSection {
+    display: flex;
+    flex-direction: column;
+    div {
+        h4 {
             text-align: center;
+            text-transform: uppercase;
+            color: #57bab5;
+            font-weight: bold;
+            font-size: 5vw;
+            margin-top: 6%;
+        }
+        img {
+            width: 25%;
+            margin: 5% auto;
+            display: flex;
+        }
+        p {
+            width: 90%;
+            margin: 2% auto 11% auto;
+            font-size: 4.5vw;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 5%;
+            a {
+                width: 50%;
+                margin: 0 auto;
+                padding: 3.5% 2% 3.5% 2%;
+                background-color: #c43e40;
+                border-radius: 2vw;
+                margin-bottom: 5%;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
         }
     }
-    p {
-        width: 75%;
-        margin: 4% auto;
-        background-color: #333;
-        padding: 3%;
-        color: white;
-    }
-
-    a {
-        display: flex;
-        width: 30%;
-        margin: 0 auto;
-        background-color: #333;
-        color: white;
-        padding: 1%;
-    }
-    h4, h5 {
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 5%;
-        margin-bottom: 6%;
-    }
-}
-
-.actionCon:nth-child(3) {
-    background-color: gray;
 }

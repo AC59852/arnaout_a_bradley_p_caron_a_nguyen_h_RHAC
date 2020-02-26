@@ -28,10 +28,11 @@
         </div>
     </section>
     <section id="help">
+        <h3>I need answers</h3>
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
         <ul>
-            <li class="helpBtn"><h2><?php echo $row['title']; ?></h2><img src="public/images/hamburger_white.svg" alt="">
+            <li class="helpBtn"><span><img class="helpImg" src="public/images/Arrow.svg" alt=""><h2><?php echo $row['title']; ?></h2></span>
             <p class="helpContent"><?php echo $row['description']; ?></p>
             <p><?php echo $row['description2']; ?></p>
             <p><?php echo $row['description3']; ?></p>
@@ -39,11 +40,25 @@
             <p><?php echo $row['description5']; ?></p>
             <p><?php echo $row['description6']; ?></p>
             <p><?php echo $row['description7']; ?></p>
-            <a href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
+            <a class="helpBtn" href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
         </li>
         </div>
     <?php endwhile;?>
     </section>
+    <section>
+        <div class="contact">
+            <h3>I Need Help</h3>
+            <contact v-for="(contactInfo, index) in contactContent"
+            :key="index"
+            :heading="contactInfo.heading"
+            :content1="contactInfo.content1"
+            :content2="contactInfo.content2"
+            :icon="contactInfo.icon"></contact>
+        </div>
+        <div class="contactLink">
+            <a href="https://hivaidsconnection.ca/">RHAC in your community</a>
+        </div>
+        </section>
     <section id="aboutSection">
     <div>
         <div id="aboutText">
@@ -59,20 +74,24 @@
 </div>
 </div>
     </section>
-    <section id="action">
-    <h2 class="hidden">Call for Action Section</h2>
-      <card id="card" v-for="(action, index) in actionContent"
-      :paragraph="action.paragraph"
-      :key="index">
-</card>
-        <!-- <div>
-            <img src="" alt="Icon 1">
-            <p>Paragraph</p>
-            <button>Action Btn 1</button>
-        </div> -->
+    <section id="actionSection">
+        <h3>get involved</h3>
+    <div v-for="action in help">
+      <h4>{{ action.title }}</h4>
+      <div id="actionImg">
+      <img v-bind:src="action.img" alt="actionIcon">
+  </div>
+      <!-- lots of text, needs to be figured out -->
+      <p>{{ action.para }}</p>
+      <div>
+      <a :href="action.link">{{action.button}}</a>
+      </div>
+  </div>
+</div>
+</div>
     </section>
     <section id="partners">
-    <h2>Our Partners</h2>
+    <h3>Our Partners</h3>
         <div id="partnerCon">
             <ul>
                 <li v-for="partner in partners"><a href=""><img v-bind:src="partner.img" alt="partner logo"></a></li>

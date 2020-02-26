@@ -1,0 +1,106 @@
+@media screen and (min-width: 350px) {
+    .infoObject {
+        ul {
+            li {
+                .helpBtn {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 680px) {
+    .toggle-menu {
+        right: 10%;
+        span {
+            height: 1vw;
+            width: 7vw;
+            &:before, &:after {
+                height: 1vw;
+                width: 7vw;
+            }
+            &:before {
+                top: 2vw;
+            }
+            &:after {
+                top: -2vw;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 835px) {
+    #heroImg img{
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+    }
+    #hero object {
+        width: 8%;
+    }
+
+    #heroCon {
+        h2 {
+            font-size: 12vw;
+            margin-top: -28%;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #menu {
+        .main-nav {
+            a {
+                font-size:4vw !important;
+            }
+        }
+
+    }
+
+    .toggle-menu {
+        top: 9%;
+        right: 8%;
+        span {
+            height: 0.5vw;
+            width: 4.5vw;
+
+            &:before, &:after {
+                height: 0.5vw;
+                width: 4.5vw;
+            }
+
+            &:before {
+                top: 1.2vw;
+            }
+
+            &:after {
+                top: -1.2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 400px) {
+
+    #menu {
+        .main-nav {
+            a {
+                font-size:4vw !important;
+            }
+        }
+
+    }
+
+}
