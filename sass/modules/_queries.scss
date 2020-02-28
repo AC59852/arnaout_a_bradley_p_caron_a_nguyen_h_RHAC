@@ -118,8 +118,11 @@
         justify-content: space-evenly;
     }
 
-    #actionSection div:nth-child(2) {
+    #actionSection div:nth-child(1) {
         border-right: solid black 3px;
+    }
+
+    #actionSection div:nth-child(3) {
         border-left: solid black 3px;
     }
 }
@@ -188,4 +191,58 @@
 
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    h3 {
+        font-size: 5vw !important;
+    }
+
+    .infoObject {
+        ul {
+            li {
+                height: 10.5vw;
+                h2 {
+                    font-size: 3.5vw;
+                    padding: 3.5% 0 5% 3%;
+                }
+                img {
+                    margin-top: 4%;
+                }
+                p {
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+
+    #help {
+        h3 {
+            width: 47%;
+        }
+    }
+
+    .contact {
+        padding-bottom: 14%;
+        h3 {
+            padding-top: 27%;
+            width: 42%;
+        }
+        img {
+            width: 8%;
+        }
+        h5 {
+            font-size: 3.6vw;
+        }
+    }
+
+    #aboutText {
+        h3 {
+            width: 49%;
+        }
+    }
+
+    #partners h3 {
+        width: 44%;
+    }
 }
