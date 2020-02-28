@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
-    <title>Document</title>
+    <title>No Shame</title>
 </head>
 <body>
     <?php include("templates/header.php");?>
@@ -40,7 +40,7 @@
             <p><?php echo $row['description5']; ?></p>
             <p><?php echo $row['description6']; ?></p>
             <p><?php echo $row['description7']; ?></p>
-            <a class="helpBtn" href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
+            <a class="helpBtn" target="_blank" href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
         </li>
         </div>
     <?php endwhile;?>
@@ -56,18 +56,19 @@
             :icon="contactInfo.icon"></contact>
         </div>
         <div class="contactLink">
-            <a href="https://hivaidsconnection.ca/">RHAC in your community</a>
+            <a target="_blank" href="https://hivaidsconnection.ca/">RHAC in your community</a>
         </div>
         </section>
     <section id="aboutSection">
     <div>
+    <h3>{{ about.title }}</h3>
         <div id="aboutText">
-      <h3>{{ about.title }}</h3>
       <!-- lots of text, needs to be figured out -->
       <p>{{ about.para }}</p>
       <p>{{ about.para2 }}</p>
-      <a href="https://hivaidsconnection.ca/">Learn More</a>
+      <a target="_blank" href="https://hivaidsconnection.ca/">Learn More</a>
   </div>
+  <div id="greenCircle"></div>
   <div id="aboutImg">
       <img v-bind:src="about.img" alt="">
   </div>
@@ -76,25 +77,25 @@
     </section>
     <section id="actionSection">
         <h3>get involved</h3>
-    <div v-for="action in help">
+        <div class="actionCon">
+        <div v-for="action in help">
       <h4>{{ action.title }}</h4>
       <div id="actionImg">
       <img v-bind:src="action.img" alt="actionIcon">
   </div>
       <!-- lots of text, needs to be figured out -->
       <p>{{ action.para }}</p>
-      <div>
-      <a :href="action.link">{{action.button}}</a>
-      </div>
+      <a target="_blank" :href="action.link">{{action.button}}</a>
   </div>
 </div>
 </div>
+        </div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
         <div id="partnerCon">
             <ul>
-                <li v-for="partner in partners"><a href=""><img v-bind:src="partner.img" alt="partner logo"></a></li>
+                <li v-for="partner in partners"><a target="_blank" href=""><img v-bind:src="partner.img" alt="partner logo"></a></li>
             </ul>
         </div>
     </section>

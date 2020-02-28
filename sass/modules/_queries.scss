@@ -11,14 +11,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 680px) {
     .toggle-menu {
         right: 10%;
@@ -39,6 +31,102 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .infoObject {
+        ul {
+            li {
+                height: 13.5vw;
+                h2 {
+                    font-size: 4vw;
+                }
+                .helpBtn {
+                    font-size: 4vw;
+                    padding: 3.5% 4%;
+                    width: 35%;
+                }
+                p {
+                    font-size: 4.4vw;
+                }
+                p:nth-child(8) {
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+
+    .contactLink {
+        a {
+            padding: 3% 4%;
+            font-size: 3.3vw;
+        }
+    }
+
+    #aboutSection {
+        #aboutText {
+            p {
+                font-size: 3.5vw;
+                width: 59%;
+                line-height: 4.5vw;
+            }
+            a {
+                border-radius: 1.5vw;
+            }
+        }
+        #aboutImg {
+            width: 55vw;
+            height: 55vw;
+            margin-left: 58%;
+            margin-top: -74%;
+        }
+    }
+
+    #actionSection {
+        h3 {
+            margin-bottom: 20%;
+        }
+        div {
+            img {
+                width: 131%;
+                margin-top: -157%;
+                margin-left: -10%;
+            }
+            div {
+                width: 30%;
+                margin: 0 auto;
+                a {
+                    font-size: 2.6vw;
+                    width: 80%;
+                    padding: 4.5% 3% 6.5% 3%;
+                    margin-top: 17%;
+                }
+            }
+            h4 {
+                font-size: 3.6vw;
+                margin-bottom: -11%;
+            }
+            p {
+                font-size: 3vw;
+                margin-top: 10%;
+                padding-top: 11%;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    .actionCon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #actionSection div:nth-child(1) {
+        border-right: solid black 3px;
+    }
+
+    #actionSection div:nth-child(3) {
+        border-left: solid black 3px;
+    }
+}
+
 
 
 @media screen and (min-width: 835px) {
@@ -54,7 +142,7 @@
     #heroCon {
         h2 {
             font-size: 12vw;
-            margin-top: -28%;
+            margin-top: -39%;
         }
     }
 }
@@ -70,8 +158,6 @@
     }
 
     .toggle-menu {
-        top: 9%;
-        right: 8%;
         span {
             height: 0.5vw;
             width: 4.5vw;
@@ -103,4 +189,358 @@
 
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+
+    .toggle-menu {
+        span {
+            height: 0.7vw;
+            width: 5vw;
+            &:before, &:after {
+                height: 0.7vw;
+                width: 5vw;
+            }
+            &:before {
+                top: 1.5vw;
+            }
+            &:after {
+                top: -1.5vw;
+            }
+        }
+
+        .navFill {
+            right: 11%;
+        }
+    }
+
+    #menu {
+        .main-nav {
+            a {
+                font-size: 6vw;
+            }
+        }
+    }
+    h3 {
+        font-size: 3.8vw !important;
+        border-bottom: #57bab5 solid 1.5vw !important;
+    }
+
+    .infoObject {
+        ul {
+            li {
+                height: 9.5vw;
+                h2 {
+                    font-size: 2.5vw;
+                    padding: 3.1% 0 5% 3%;
+                }
+                img {
+                    margin-top: 3.8%;
+                    width: 3.6%;
+                }
+                p {
+                    font-size: 2.4vw;
+                    line-height: 3.4vw;
+                }
+                .helpBtn {
+                    font-size: 2.4vw;
+                    padding: 2% 3.2%;
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    .reveal {
+        height: 89vw !important;
+    }
+
+    #help {
+        h3 {
+            width: 36%;
+        }
+    }
+
+    .contact {
+        width: 70%;
+        h3 {
+            padding-top: 27%;
+            width: 40%;
+        }
+        img {
+            width: 7%;
+            margin-left: 21%;
+        } h4 {
+            font-size: 3.5vw;
+        }
+        h5 {
+            font-size: 2.5vw;
+        }
+    }
+
+    .contactLink {
+        margin-top: 23%;
+        a {
+            padding: 2% 3%;
+            font-size: 2vw;
+        }
+    }
+
+    #partners h3 {
+        width: 33%;
+    }
+    #aboutSection {
+        h3 {
+            width: 38%;
+        }
+        #aboutText {
+            p {
+                font-size: 2.3vw;
+                width: 48%;
+                line-height: 3.5vw;
+            }
+            a {
+                padding: 1.3% 6% 1.3% 5%;
+                font-size: 2.5vw;
+            }
+        }
+        #aboutImg {
+            height: 48vw;
+            width: 48vw;
+            margin-top: -53%;
+            margin-left: 54%;
+        }
+    }
+    #actionSection {
+        margin-top: -35%;
+        h3 {
+            width: 32%;
+        }
+        div {
+            img {
+                width: 120%;
+                margin-left: -5%;
+            }
+            h4 {
+                font-size: 2.8vw;
+            }
+            p {
+                font-size: 2.1vw;
+            }
+            div {
+                a {
+                    font-size: 2vw;
+                    width: 53%;
+                    padding: 4.5% 3%;
+                    border-radius: 1vw;
+                }
+            }
+        }
+    }
+
+    .mainFooter {
+        h4 {
+            font-size: 2vw;
+        }
+    }
+
+    .footerSocial {
+        width: 33%;
+        a:nth-child(1) {
+            margin-top: auto;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1192px) {
+    #hero {
+        object {
+            max-width: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h3 {
+        font-size: 3vw !important;
+    }
+    .infoObject {
+        ul {
+            li {
+                height: 7.5vw;
+                h2 {
+                    font-size: 2vw;
+                    padding-top: 2.5%;
+                }
+                p {
+                    font-size: 2vw;
+                    line-height: 3vw;
+                }
+                img {
+                    margin-top: 2.8%;
+                }
+                .helpBtn {
+                    font-size: 1.4vw;
+                    padding: 1.5% 1%;
+                    width: 17%;
+                    border-radius: 1vw;
+                }
+            }
+        }
+    }
+
+    #help {
+        h3 {
+            width: 29%;
+        }
+    }
+
+    .contact {
+        width: 55%;
+        padding-bottom: 7%;
+        h3 {
+            width: 38%;
+            padding-top: 31%;
+        }
+        h4 {
+            font-size: 2.8vw;
+            margin-top: -17%;
+        }
+        h5 {
+            font-size: 1.5vw;
+            margin-top: 1%;
+        }
+        img {
+            width: 5%;
+            margin-left: 28%;
+            margin-bottom: 8%;
+        }
+    }
+    .contactLink {
+        a {
+            padding: 1.5% 2%;
+            font-size: 1.5vw;
+            border-radius: 1vw;
+        }
+    }
+
+    #aboutSection {
+        #aboutImg {
+            height: 39vw;
+            width: 39vw;
+            margin-top: -52%;
+            margin-left: 66%;
+            img {
+                width: 165%;
+                top: -15%;
+                left: -68%;
+            }
+        }
+
+        h3 {
+            width: 29%;
+        }
+
+        #aboutText {
+            a {
+                font-size: 2.3vw;
+            }
+        }
+    }
+
+    #greenCircle {
+        display: block;
+    }
+
+    #actionSection {
+        h3 {
+            width: 24%;
+        }
+        div {
+            img {
+                width: 93%;
+                margin-left: 5%;
+            }
+            h4 {
+                font-size: 2.2vw;
+            }
+            p {
+                font-size: 1.4vw;
+            }
+            div {
+                a {
+                    font-size: 1.4vw;
+                    width: 45%;
+                    padding: 3.1% 2.5%;
+                }
+            }
+        }
+    }
+
+    #partners {
+        h3 {
+            width: 26%;
+        }
+    }
+
+    #partnerCon ul > li {
+        width: 29%;
+    }
+
+    .footerSocial {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    #aboutSection {
+        #aboutText {
+            margin-left: 16%;
+            p {
+                font-size: 1.8vw;
+                width: 42%;
+                line-height: 2.8vw;
+            }
+            a{
+                font-size: 1.3vw;
+                padding: 1% 4% 1% 3%;
+                border-radius: 1vw;
+            }
+        }
+        #aboutImg {
+            height: 34vw;
+            width: 34vw;
+            margin-top: -46%;
+            margin-left: 67%;
+            img {
+                width: 134%;
+                top: 0;
+                left: -29%;
+            }
+    }
+}
+#greenCircle {
+    margin-top: -24%;
+    right: 25%;
+    width: 17vw;
+    height: 17vw;
+}
+
+.toggle-menu {
+    span {
+        height: 0.4vw;
+        width: 3vw;
+        &:before, &:after {
+            height: 0.4vw;
+            width: 3vw;
+        }
+        &:before {
+            top: 0.8vw;
+        }
+        &:after {
+            top: -0.8vw;
+        }
+    }
+}
 }
