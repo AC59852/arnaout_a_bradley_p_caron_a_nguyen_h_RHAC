@@ -77,23 +77,12 @@ main.classList.toggle("noscroll");
         },
         offset: -125
     });
-
-    var waypoint5 = new Waypoint({
-        element: document.querySelector('#action'),
-        handler: function(direction) {
-            console.log("hit the fifth waypoint");
-            navLines.classList.add("navBck");
-            navWrapper.classList.add("navFill");
-            nav.classList.add("noBck");
-        },
-        offset: -305
-    });
     
 
-    var waypoint6 = new Waypoint({
+    var waypoint5 = new Waypoint({
         element: document.querySelector('#partners'),
         handler: function(direction) {
-            console.log("hit sixth waypoint");
+            console.log("hit fifth waypoint");
             navLines.classList.add("navBck");
             navWrapper.classList.add("navFill");
             nav.classList.add("noBck");

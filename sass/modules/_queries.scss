@@ -158,8 +158,6 @@
     }
 
     .toggle-menu {
-        top: 9%;
-        right: 8%;
         span {
             height: 0.5vw;
             width: 4.5vw;
@@ -254,7 +252,7 @@
     }
 
     .reveal {
-        height: 84vw !important;
+        height: 89vw !important;
     }
 
     #help {
@@ -292,10 +290,10 @@
         width: 33%;
     }
     #aboutSection {
+        h3 {
+            width: 38%;
+        }
         #aboutText {
-            h3 {
-                width: 38%;
-            }
             p {
                 font-size: 2.3vw;
                 width: 48%;
@@ -353,4 +351,196 @@
         }
 
     }
+}
+
+@media screen and (min-width: 1192px) {
+    #hero {
+        object {
+            max-width: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h3 {
+        font-size: 3vw !important;
+    }
+    .infoObject {
+        ul {
+            li {
+                height: 7.5vw;
+                h2 {
+                    font-size: 2vw;
+                    padding-top: 2.5%;
+                }
+                p {
+                    font-size: 2vw;
+                    line-height: 3vw;
+                }
+                img {
+                    margin-top: 2.8%;
+                }
+                .helpBtn {
+                    font-size: 1.4vw;
+                    padding: 1.5% 1%;
+                    width: 17%;
+                    border-radius: 1vw;
+                }
+            }
+        }
+    }
+
+    #help {
+        h3 {
+            width: 29%;
+        }
+    }
+
+    .contact {
+        width: 55%;
+        padding-bottom: 7%;
+        h3 {
+            width: 38%;
+            padding-top: 31%;
+        }
+        h4 {
+            font-size: 2.8vw;
+            margin-top: -17%;
+        }
+        h5 {
+            font-size: 1.5vw;
+            margin-top: 1%;
+        }
+        img {
+            width: 5%;
+            margin-left: 28%;
+            margin-bottom: 8%;
+        }
+    }
+    .contactLink {
+        a {
+            padding: 1.5% 2%;
+            font-size: 1.5vw;
+            border-radius: 1vw;
+        }
+    }
+
+    #aboutSection {
+        #aboutImg {
+            height: 39vw;
+            width: 39vw;
+            margin-top: -52%;
+            margin-left: 66%;
+            img {
+                width: 165%;
+                top: -15%;
+                left: -68%;
+            }
+        }
+
+        h3 {
+            width: 29%;
+        }
+
+        #aboutText {
+            a {
+                font-size: 2.3vw;
+            }
+        }
+    }
+
+    #greenCircle {
+        display: block;
+    }
+
+    #actionSection {
+        h3 {
+            width: 24%;
+        }
+        div {
+            img {
+                width: 93%;
+                margin-left: 5%;
+            }
+            h4 {
+                font-size: 2.2vw;
+            }
+            p {
+                font-size: 1.4vw;
+            }
+            div {
+                a {
+                    font-size: 1.4vw;
+                    width: 45%;
+                    padding: 3.1% 2.5%;
+                }
+            }
+        }
+    }
+
+    #partners {
+        h3 {
+            width: 26%;
+        }
+    }
+
+    #partnerCon ul > li {
+        width: 29%;
+    }
+
+    .footerSocial {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    #aboutSection {
+        #aboutText {
+            margin-left: 16%;
+            p {
+                font-size: 1.8vw;
+                width: 42%;
+                line-height: 2.8vw;
+            }
+            a{
+                font-size: 1.3vw;
+                padding: 1% 4% 1% 3%;
+                border-radius: 1vw;
+            }
+        }
+        #aboutImg {
+            height: 34vw;
+            width: 34vw;
+            margin-top: -46%;
+            margin-left: 67%;
+            img {
+                width: 134%;
+                top: 0;
+                left: -29%;
+            }
+    }
+}
+#greenCircle {
+    margin-top: -24%;
+    right: 25%;
+    width: 17vw;
+    height: 17vw;
+}
+
+.toggle-menu {
+    span {
+        height: 0.4vw;
+        width: 3vw;
+        &:before, &:after {
+            height: 0.4vw;
+            width: 3vw;
+        }
+        &:before {
+            top: 0.8vw;
+        }
+        &:after {
+            top: -0.8vw;
+        }
+    }
+}
 }
