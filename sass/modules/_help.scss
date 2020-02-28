@@ -18,8 +18,9 @@
             }
             h2 {
                 padding: 5% 0 5% 3%;
+                font-weight: 600;
                 width: 97%;
-                font-size: 4.4vw;
+                font-size: 4.2vw;
                 background-color: #c43e40;
             }
             img {
@@ -29,6 +30,7 @@
                 position: absolute;
                 margin-top: 6%;
                 transform: rotateX(180deg);
+                transition: transform 0.2s ease-in-out;
             }
             p {
                 width: 95%;
@@ -57,7 +59,10 @@
     }
 }
 .reveal {
-    height: 155vw !important;
+    height: 167vw !important;
+    .helpImg {
+        transform: rotateX(0deg);
+    }
 }
 
 .helpButton {
@@ -67,7 +72,7 @@
 }
 
 .contact{
-    width: 80%;
+    width: 87%;
     margin: -13% auto;
     background-color: #ffe274;
     border-radius: 100%;
@@ -77,6 +82,7 @@
         margin: 0 auto;
         width: 50%;
         padding-top: 30%;
+        margin-bottom: 6%;
     }
     h3, h4, h5 {
         text-align: center;
@@ -94,10 +100,11 @@
 
     h5 {
         font-size: 4vw;
+        margin-top: 2%;
     }
     img {
-        width: 10%;
-        margin: 8% 19%;
+        width: 9%;
+        margin: 8% 19% 6%;
     }
     a {
         text-align: center;

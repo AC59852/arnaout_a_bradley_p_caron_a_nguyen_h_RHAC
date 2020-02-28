@@ -5,12 +5,14 @@ navBtns = document.querySelectorAll(".navBtn"),
 navLines = document.querySelector(".navLines"),
 helpButton = document.querySelectorAll(".helpBtn"),
 main = document.querySelector("body"),
+helpIcon = document.querySelectorAll(".helpImg"),
 navWrapper = document.querySelector(".navWrapper");
 
 
 helpButton.forEach(button => button.addEventListener("click", function(e) {
 console.log("this worked");
 this.classList.toggle("reveal");
+helpIcon.classList.toggle("transform");
 }));
 
 

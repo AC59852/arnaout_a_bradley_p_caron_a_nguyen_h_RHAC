@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/main.css">
-    <title>Document</title>
+    <title>No Shame</title>
 </head>
 <body>
     <?php include("templates/header.php");?>
