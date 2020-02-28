@@ -76,19 +76,19 @@
     </section>
     <section id="actionSection">
         <h3>get involved</h3>
-    <div v-for="action in help">
+        <div class="actionCon">
+        <div v-for="action in help">
       <h4>{{ action.title }}</h4>
       <div id="actionImg">
       <img v-bind:src="action.img" alt="actionIcon">
   </div>
       <!-- lots of text, needs to be figured out -->
       <p>{{ action.para }}</p>
-      <div>
       <a :href="action.link">{{action.button}}</a>
-      </div>
   </div>
 </div>
 </div>
+        </div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>

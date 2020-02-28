@@ -11,14 +11,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 680px) {
     .toggle-menu {
         right: 10%;
@@ -39,6 +31,99 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .infoObject {
+        ul {
+            li {
+                height: 13.5vw;
+                h2 {
+                    font-size: 4vw;
+                }
+                .helpBtn {
+                    font-size: 4vw;
+                    padding: 3.5% 4%;
+                    width: 35%;
+                }
+                p {
+                    font-size: 4.4vw;
+                }
+                p:nth-child(8) {
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+
+    .contactLink {
+        a {
+            padding: 3% 4%;
+            font-size: 3.3vw;
+        }
+    }
+
+    #aboutSection {
+        #aboutText {
+            p {
+                font-size: 3.5vw;
+                width: 59%;
+                line-height: 4.5vw;
+            }
+            a {
+                border-radius: 1.5vw;
+            }
+        }
+        #aboutImg {
+            width: 55vw;
+            height: 55vw;
+            margin-left: 58%;
+            margin-top: -74%;
+        }
+    }
+
+    #actionSection {
+        h3 {
+            margin-bottom: 20%;
+        }
+        div {
+            img {
+                width: 131%;
+                margin-top: -157%;
+                margin-left: -10%;
+            }
+            div {
+                width: 30%;
+                margin: 0 auto;
+                a {
+                    font-size: 2.6vw;
+                    width: 80%;
+                    padding: 4.5% 3% 6.5% 3%;
+                    margin-top: 17%;
+                }
+            }
+            h4 {
+                font-size: 3.6vw;
+                margin-bottom: -11%;
+            }
+            p {
+                font-size: 3vw;
+                margin-top: 10%;
+                padding-top: 11%;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    .actionCon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #actionSection div:nth-child(2) {
+        border-right: solid black 3px;
+        border-left: solid black 3px;
+    }
+}
+
 
 
 @media screen and (min-width: 835px) {
@@ -54,7 +139,7 @@
     #heroCon {
         h2 {
             font-size: 12vw;
-            margin-top: -28%;
+            margin-top: -39%;
         }
     }
 }
