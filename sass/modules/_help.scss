@@ -2,6 +2,7 @@
     color: white;
     ul {
         li {
+            position: relative;
             display: flex;
             flex-direction: column;
             height:14.3vw;
@@ -11,7 +12,6 @@
             .helpTitle {
                 display: flex;
                 flex-direction: row;
-                padding-bottom: 14%;
             }
             h2 {
                 border-top: 3px white solid;
