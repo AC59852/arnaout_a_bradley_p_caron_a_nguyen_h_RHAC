@@ -28,9 +28,10 @@
     <?php include("templates/header.php");?>
     <main id="app">
     <section id="hero">
+        <h2 class="hidden">Hero</h2>
         <object data="public/images/RHAC.svg" type="image/svg+xml"></object>
         <div id="heroCon">
-            <div id="heroImg"><img src="public/images/hero.png"></div>
+            <div id="heroImg"><img src="public/images/hero.png" alt="background hero image"></div>
             <h2>no shame.</h2>
         </div>
     </section>
@@ -39,7 +40,7 @@
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
         <ul>
-            <li class="helpBtn"><span class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt=""><h2><?php echo $row['title']; ?></h2></span>
+            <li class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['title']; ?></h2></div>
             <p class="helpContent"><?php echo $row['description']; ?></p>
             <p><?php echo $row['description2']; ?></p>
             <p><?php echo $row['description3']; ?></p>
@@ -49,6 +50,7 @@
             <p><?php echo $row['description7']; ?></p>
             <a class="helpBtn" target="_blank" href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
         </li>
+    </ul>
         </div>
     <?php endwhile;?>
     </section>
@@ -77,9 +79,8 @@
   </div>
   <div id="greenCircle"></div>
   <div id="aboutImg">
-      <img v-bind:src="about.img" alt="">
+      <img v-bind:src="about.img" alt="image of RHAC group">
   </div>
-</div>
 </div>
     </section>
     <section id="actionSection">
@@ -95,8 +96,6 @@
       <a target="_blank" :href="action.link">{{action.button}}</a>
   </div>
 </div>
-</div>
-        </div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>

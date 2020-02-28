@@ -148,18 +148,21 @@ $hamburger-zindex: $menu-zindex + 10;
 }
 
 .navBck {
+  background-color: #f0f0f0  !important;
   outline: solid 1px black;
   &:before {
+    background-color: #f0f0f0  !important;
     outline: solid 1px black;
   }
   &:after {
+    background-color: #f0f0f0 !important;
     outline: solid 1px black;
   }
 }
 
 .navFill {
   top: 5%;
-  outline: black;
+  outline: black 1px;
   position: fixed;
   right: 15%;
 
