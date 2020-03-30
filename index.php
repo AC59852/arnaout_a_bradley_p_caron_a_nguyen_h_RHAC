@@ -29,10 +29,9 @@
     <main id="app">
     <section id="hero">
         <h2 class="hidden">Hero</h2>
-        <object data="public/images/RHAC.svg" type="image/svg+xml"></object>
         <div id="heroCon">
             <div id="heroImg"><img src="public/images/hero.png" alt="background hero image"></div>
-            <h2>no shame.</h2>
+            <h2><span id="no">#no</span> <span id="shame">shame.</span></h2>
         </div>
     </section>
     <section id="help">

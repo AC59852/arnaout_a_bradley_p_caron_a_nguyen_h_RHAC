@@ -90,34 +90,34 @@ $hamburger-zindex: $menu-zindex + 10;
   top: 5%;
   outline: none;
   position: fixed;
-  right: 15%;
+  right: 12%;
   z-index: $hamburger-zindex;
 
   span {
     background-color: $hamburger-color;
     content: "";
     display: block;
-    height: 1.4vw;
+    height: 1vw;
     position: absolute;
     transition: background-color 0.1s ease-in-out, top 0.1s 0.1s ease-out,  transform 0.1s linear;
-    width: 10vw;
+    width: 8vw;
 
     &:before, &:after {
       background-color: $hamburger-color;
       content: "";
       display: block;
-      height: 1.4vw;
+      height: 1vw;
       position: absolute;
       transition: background-color 0.1s ease-in-out, top 0.1s 0.1s ease-out,  transform 0.1s linear;
-      width: 10vw;
+      width: 8vw;
     }
 
     &:before {
-      top: 2.7vw;
+      top: 2.2vw;
     }
 
     &:after {
-      top: -2.7vw;
+      top: -2.2vw;
     }
   }
 
@@ -164,6 +164,21 @@ $hamburger-zindex: $menu-zindex + 10;
   top: 5%;
   outline: black 1px;
   position: fixed;
-  right: 15%;
+  right: 13.4%;
 
+}
+
+.navSocials {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: 10% auto 0;
+  svg {
+    width: 10%;
+  }
+
+  svg:nth-child(6) {
+    width: 6%;
+  }
 }

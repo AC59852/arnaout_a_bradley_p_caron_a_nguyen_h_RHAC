@@ -65,11 +65,7 @@ Vue.component('card', {
       ],
 
   // replace this with database content later
-      actionContent: [
-        { paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
-        { paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi vitae. Sed odio morbi quis commodo. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam." },
-        { paragraph: "Egestas congue quisque egestas diam in. Nunc sed blandit libero volutpat sed. Est velit egestas dui id. Orci ac auctor augue mauris augue neque gravida. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum." }
-      ]
+     
     },
     
     created: function(){
