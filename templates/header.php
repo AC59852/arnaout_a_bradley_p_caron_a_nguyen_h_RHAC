@@ -16,7 +16,7 @@
         <li><a class="navBtn" href="#home">donate</a></li>
     </ul>
     <div class="navSocials">
-    <svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <a href="http://instagram.com"><svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	    viewBox="0 0 510.9 511" style="enable-background:new 0 0 510.9 511;" xml:space="preserve">
         <style type="text/css">
 	        .insta{fill:#c43e40;}
@@ -38,9 +38,9 @@
       	S302.6,340.7,255.5,340.7z"/>
       <path class="insta" d="M422.7,119.1c0,16.9-13.7,30.6-30.6,30.6c-16.9,0-30.6-13.7-30.6-30.6c0-16.9,13.7-30.6,30.6-30.6
       	C408.9,88.4,422.7,102.2,422.7,119.1z"/>
-    </svg>
+    </svg></a>
 
-    <svg version="1.1" id="tiktok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <a href="http://tiktok.com"><svg version="1.1" id="tiktok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <style type="text/css">
 	     .tiktok{fill:#c43e40;}
@@ -49,9 +49,9 @@
       	c0,31.6-25.7,57.3-57.3,57.3s-57.3-25.7-57.3-57.3c0-31.6,25.7-57.3,57.3-57.3c8.3,0,15-6.7,15-15v-80.3c0-8.3-6.7-15-15-15
       	C107.2,176.7,32,251.9,32,344.4S107.2,512,199.6,512s167.6-75.2,167.6-167.6V198.6c29.9,15.9,63.1,24.2,97.5,24.2
       	c8.3,0,15-6.7,15-15v-80.3C479.7,119.2,473,112.5,464.7,112.5z"/>
-    </svg>
+    </svg></a>
 
-    <svg version="1.1" id="snapchat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <a href="http://snapchat.com"><svg version="1.1" id="snapchat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	    viewBox="0 0 638.4 599.3" style="enable-background:new 0 0 638.4 599.3;" xml:space="preserve">
         <style type="text/css">
 	        .snapchat{fill:#c43e40;}
@@ -69,9 +69,9 @@
 	          c-3.8,8.9-21,21.5-81,30.8c-4.9,0.8-6.8,7.1-9.7,20.5c-1.1,4.9-2.1,9.7-3.6,14.7c-1.3,4.4-4,6.4-8.6,6.4h-0.7
           	c-3.2,0-7.7-0.6-13.4-1.7c-10.2-2-21.5-3.8-36-3.8c-8.5,0-17.2,0.7-26,2.2c-18,3-33.3,13.8-49.5,25.2
           	C385.4,582.1,361.1,599.3,323.2,599.3"/>
-    </svg>
+    </svg></a>
 
-    <svg version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <a href="http://twitter.com"><svg version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	    viewBox="0 0 410.2 341.2" style="enable-background:new 0 0 410.2 341.2;" xml:space="preserve">
         <style type="text/css">
         	.twitter{fill:#c43e40;}
@@ -85,9 +85,9 @@
           	c-0.8,3,0.7,6.2,3.4,7.7c37,21.5,79.1,32.9,122,32.9c37.5,0,72.5-7.4,104.2-22.1c29-13.4,54.7-32.7,76.3-57.1
           	c20.1-22.8,35.8-49.1,46.7-78.2c10.4-27.7,15.9-57.3,15.9-85.6v-1.3c0-4.5,2.1-8.8,5.6-11.7c13.6-11,25.4-24,35.2-38.6l0,0
           	C411.9,42.6,407.9,37.8,403.6,39.7L403.6,39.7z"/>
-    </svg>
+    </svg></a>
 
-    <svg version="1.1" id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <a href="http://youtube.com"><svg version="1.1" id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	      viewBox="0 0 512 394.6" style="enable-background:new 0 0 512 394.6;" xml:space="preserve">
         <style type="text/css">
 	        .youtube{fill:#c43e40;}
@@ -101,9 +101,9 @@
           	C140.4,35.5,198.2,32,256,32c57.8,0,115.7,3.6,163.9,10.7c26,3.9,46.5,24.4,51,51.2C483.2,166.4,483.2,228.2,470.9,300.6
           	L470.9,300.6z"/>
           <polygon class="youtube" points="206,135.3 206,267.3 331,197.3 "/>
-    </svg>
+    </svg></a>
 
-    <svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  
+    <a href="http://facebook.com"><svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  
 	    viewBox="0 0 52 96.1" style="enable-background:new 0 0 52 96.1;" xml:space="preserve">
         <style type="text/css">
         	.facebook{fill:#c43e40;}
@@ -113,7 +113,7 @@
 	            	c0,1.1,0.9,2,2,2h16.4c1.1,0,2-0.9,2-2V54.3h14.7c1.1,0,2-0.9,2-2l0-15.8c0-0.5-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6H34.8v-9.2
 	            	c0-4.4,1.1-6.7,6.8-6.7l8.4,0c1.1,0,2-0.9,2-2V2C52,0.9,51.1,0,50,0z"/>
             </g>
-    </svg>
+    </svg></a>
  
     </div>
   </nav>

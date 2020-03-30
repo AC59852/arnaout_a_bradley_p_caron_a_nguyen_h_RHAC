@@ -1,4 +1,18 @@
 @media screen and (min-width: 350px) {
+
+    .navSocials {
+        margin-top: 6%;
+        a {
+            width: 170%;
+            svg {
+                width: 170%;
+            }
+        }
+
+        a:nth-child(6) {
+            width: 87%;
+        }
+    }
     .infoObject {
         ul {
             li {
@@ -10,8 +24,37 @@
     }
 }
 
+@media screen and (min-width: 414px) {
+    .navSocials {
+        a {
+            width: 150%;
+            svg {
+                width: 150%;
+            }
+        }
+        a:nth-child(6) {
+            width: 73%;
+        }
+    }
+}
+
+@media screen and  (min-width: 480px) {
+    .navSocials {
+        a {
+            width: 100%;
+            svg {
+                width: 100%;
+            }
+        }
+
+        a:nth-child(6) {
+            width: 55%;
+        }
+    }
+}
 
 @media screen and (min-width: 680px) {
+
     .toggle-menu {
         right: 10%;
         span {
@@ -383,7 +426,7 @@
     }
 
     .navSocials {
-        margin-top: 5%;
+        margin-top: 3%;
         width: 45%;
         svg {
             width: 9%;
