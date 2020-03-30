@@ -28,6 +28,7 @@ Vue.component('card', {
       icon: String
   
     },
+
     template: `
     <div class="contactCon">
       <div><img :src="'public/images/' + icon" alt="Contact Icon">
@@ -35,6 +36,22 @@ Vue.component('card', {
             <h5>{{ content1 }}</h5>
             <h5 class="contact2">{{ content2 }}</h5>
       </div>
+    </div>
+    `
+  })
+
+  Vue.component('promotion', {
+    props: {
+      title: String,
+      video: String
+    },
+
+    template: `
+    <div id="promoContainer">
+      <h3>{{ title }}</h3>
+        <div class="vidCon">
+            <div><video :src="'public/video/' + video" controls></video>
+        </div>
     </div>
     `
   })
@@ -58,6 +75,10 @@ Vue.component('card', {
       help: {
 
       },
+
+      promoContent: [
+        {title: "our campaign", video: "campaign.mp4"}
+      ],
 
       contactContent: [
         {heading: "call", content1: "+1 (866) 920-1601", content2: " ", icon: "phone.svg"},

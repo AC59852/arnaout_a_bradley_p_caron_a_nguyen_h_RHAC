@@ -265,6 +265,13 @@
 
 @media screen and (min-width: 1024px) {
 
+    #promoContainer {
+        margin-top: 13%;
+        h3 {
+            width: 32%;
+        }
+    }
+
     .toggle-menu {
         top: 7%;
         span {
@@ -447,6 +454,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+    #promoContainer {
+        h3 {
+            width: 25%;
+        }
+    }
+
+
     h3 {
         font-size: 3vw !important;
     }

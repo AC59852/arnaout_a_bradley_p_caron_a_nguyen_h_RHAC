@@ -96,6 +96,12 @@
   </div>
 </div>
     </section>
+    <section id="videoSection">
+    <promotion v-for="(promoVideo, index) in promoContent"
+    :key="index"
+    :title="promoVideo.title"
+    :video="promoVideo.video"></promotion>
+    </section>
     <section id="partners">
     <h3>Our Partners</h3>
         <div id="partnerCon">
