@@ -35,12 +35,28 @@
     h2 {
         text-transform: uppercase;
         font-size: 18vw;
-        width: 40%;
+        width: 55%;
         color: #ffe274;
         margin-top: -56%;
         margin-bottom: 28%;
         margin-left: 4%;
         font-weight: 880;
         position: absolute;
+    }
+
+    span {
+        background: linear-gradient(#c43e40, #c43e40) no-repeat;
+        height: 19vw;
+        padding-left: 3%;
+    }
+
+    #no {
+        display: block;
+        width: 80%;
+    }
+
+    #shame {
+        width: 138%;
+        display: block;
     }
 }

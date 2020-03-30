@@ -1,4 +1,18 @@
 @media screen and (min-width: 350px) {
+
+    .navSocials {
+        margin-top: 6%;
+        a {
+            width: 170%;
+            svg {
+                width: 170%;
+            }
+        }
+
+        a:nth-child(6) {
+            width: 87%;
+        }
+    }
     .infoObject {
         ul {
             li {
@@ -10,8 +24,37 @@
     }
 }
 
+@media screen and (min-width: 414px) {
+    .navSocials {
+        a {
+            width: 150%;
+            svg {
+                width: 150%;
+            }
+        }
+        a:nth-child(6) {
+            width: 73%;
+        }
+    }
+}
+
+@media screen and  (min-width: 480px) {
+    .navSocials {
+        a {
+            width: 100%;
+            svg {
+                width: 100%;
+            }
+        }
+
+        a:nth-child(6) {
+            width: 55%;
+        }
+    }
+}
 
 @media screen and (min-width: 680px) {
+
     .toggle-menu {
         right: 10%;
         span {
@@ -125,6 +168,17 @@
     #actionSection div:nth-child(3) {
         border-left: solid black 3px;
     }
+
+    .navSocials {
+        width: 60%;
+        svg {
+            width: 9%;
+        }
+
+        svg:nth-child(6) {
+            width: 5%;
+        }
+    }
 }
 
 
@@ -141,8 +195,26 @@
 
     #heroCon {
         h2 {
-            font-size: 12vw;
+            font-size: 11vw;
             margin-top: -39%;
+            margin-left: 0;
+        }
+
+        span {
+            background-position: 0 10px;
+            height: 12.9vw;
+        }
+
+        #no {
+            width: 55%;
+            padding-top: 0.5%;
+            padding-bottom: 1%;
+        }
+
+        #shame {
+            margin-top: -3%;
+            padding-top: 1.5%;
+            width: 95%;
         }
     }
 }
@@ -194,18 +266,19 @@
 @media screen and (min-width: 1024px) {
 
     .toggle-menu {
+        top: 7%;
         span {
-            height: 0.7vw;
-            width: 5vw;
+            height: 0.5vw;
+            width: 4vw;
             &:before, &:after {
-                height: 0.7vw;
-                width: 5vw;
+                height: 0.5vw;
+                width: 4vw;
             }
             &:before {
-                top: 1.5vw;
+                top: 1.2vw;
             }
             &:after {
-                top: -1.5vw;
+                top: -1.2vw;
             }
         }
 
@@ -351,6 +424,18 @@
         }
 
     }
+
+    .navSocials {
+        margin-top: 3%;
+        width: 45%;
+        svg {
+            width: 9%;
+        }
+
+        svg:nth-child(6) {
+            width: 5%;
+        }
+    }
 }
 
 @media screen and (min-width: 1192px) {
@@ -397,8 +482,8 @@
     }
 
     .contact {
-        width: 55%;
-        padding-bottom: 7%;
+        width: 54%;
+        padding-bottom: 10%;
         h3 {
             width: 38%;
             padding-top: 31%;
@@ -498,6 +583,19 @@
     .footerSocial {
         width: 25%;
     }
+
+}
+
+@media screen and (min-width: 1366px) {
+    .contact {
+        width: 50%;
+        padding-bottom: 8%;
+        margin-top: -10%;
+        h3 {
+            width: 41%;
+            padding-top: 27%;
+        }
+    }
 }
 
 @media screen and (min-width: 1680px) {
@@ -548,6 +646,17 @@
         &:after {
             top: -0.8vw;
         }
+    }
+}
+
+.navSocials {
+    width: 25%;
+    svg {
+        width: 10%;
+    }
+
+    svg:nth-child(6) {
+        width: 5%;
     }
 }
 }
