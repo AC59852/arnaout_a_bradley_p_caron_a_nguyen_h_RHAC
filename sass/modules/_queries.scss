@@ -179,6 +179,39 @@
             width: 5%;
         }
     }
+
+    .regPopup {
+        .signForm {
+            span {
+                font-size: 5vw;
+            }
+
+            h1 {
+                width: 89%;
+                font-size: 5vw;
+            }
+
+            form {
+                div {
+                    label {
+                        text-align: left;
+                        font-size: 3vw;
+                    }
+
+                    input {
+                        border-radius: 0.4vw;
+                        font-size: 2.2vw;
+                    }
+                }
+
+                button {
+                    width: 29%;
+                    border-radius: 0.4vw;
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
 }
 
 
@@ -443,6 +476,50 @@
             width: 5%;
         }
     }
+
+    .regPopup {
+        .signForm {
+        padding: 3% 0;
+        width: 85%;
+        top: 10%;
+        transform: translateY(-10%);
+            span {
+                font-size: 3vw;
+            }
+
+            h1 {
+                width: 89%;
+                font-size: 3vw;
+            }
+
+            form {
+                div {
+                    width: 64%;
+                    margin-top: 1%;
+                    label {
+                        font-size: 2vw;
+                        margin-top: 3%;
+                    }
+
+                    input {
+                        font-size: 1.9vw;
+                        padding: 1% 0 1.2% 1%;
+
+                        &::placeholder {
+                            font-size: 1.9vw;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 1% 0 1.2%;
+                    width: 23%;
+                    font-size: 2.2vw;
+                    margin: 4% auto 1%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1192px) {
@@ -604,6 +681,41 @@
             padding-top: 27%;
         }
     }
+
+    .regPopup {
+        .signForm {
+            width: 75%;
+            span {
+                font-size: 2.4vw;
+            }
+
+            h1 {
+                width: 62%;
+                font-size: 2.5vw;
+                margin-bottom: 3%;
+            }
+
+            form {
+                div {
+                    width: 55%;
+                    label {
+                        font-size: 1.8vw;
+                    }
+                    input {
+                        font-size: 1.4vw;
+                        &::placeholder {
+                            font-size: 1.4vw;
+                        }
+                    }
+
+                    button {
+                        width: 20%;
+                        font-size: 1.6vw;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1680px) {
@@ -665,6 +777,39 @@
 
     svg:nth-child(6) {
         width: 5%;
+    }
+}
+
+.regPopup {
+    .signForm {
+        width: 66%;
+        h1 {
+            width: 58%;
+            font-size: 1.6vw;
+        }
+        form {
+            div {
+                width: 48%;
+                label {
+                    font-size: 1.3vw;
+                    margin-top: 1%;
+                }
+
+                input {
+                    font-size: 1.2vw;
+
+                    &::placeholder {
+                        font-size: 1.2vw;
+                    }
+                }
+            }
+
+            button {
+                width: 18%;
+                font-size: 1.5vw;
+                margin: 3% auto 1%;
+            }
+        }
     }
 }
 }

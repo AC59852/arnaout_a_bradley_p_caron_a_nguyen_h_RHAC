@@ -5,7 +5,7 @@ $menu-bg: rgba(255,255,255,0.97);
 $menu-color: #202020;
 $menu-font-size: 9vw;
 $menu-zindex: 1100;
-$hamburger-color: #fff;
+$hamburger-color: rgb(226, 226, 226);
 $hamburger-width: 50px;
 $hamburger-height: 50px;
 $hamburger-zindex: $menu-zindex + 10;
@@ -94,6 +94,7 @@ $hamburger-zindex: $menu-zindex + 10;
   z-index: $hamburger-zindex;
 
   span {
+    box-shadow: 2px 2px 3px #555555;
     background-color: $hamburger-color;
     content: "";
     display: block;
@@ -103,6 +104,7 @@ $hamburger-zindex: $menu-zindex + 10;
     width: 8vw;
 
     &:before, &:after {
+      box-shadow: 2px 2px 3px #555555;
       background-color: $hamburger-color;
       content: "";
       display: block;
@@ -125,6 +127,7 @@ $hamburger-zindex: $menu-zindex + 10;
     span {
       background-color: transparent !important;
       transition: background 0.1s ease-out !important;
+      box-shadow: none;
 
       &:before, &:after {
         transition: top 0.1s ease-out, transform 0.1s 0.1s ease-out !important;
@@ -147,26 +150,6 @@ $hamburger-zindex: $menu-zindex + 10;
 
 }
 
-.navBck {
-  background-color: #f0f0f0  !important;
-  outline: solid 1px black;
-  &:before {
-    background-color: #f0f0f0  !important;
-    outline: solid 1px black;
-  }
-  &:after {
-    background-color: #f0f0f0 !important;
-    outline: solid 1px black;
-  }
-}
-
-.navFill {
-  top: 5%;
-  outline: black 1px;
-  position: fixed;
-  right: 13.4%;
-
-}
 
 .navSocials {
   display: flex;

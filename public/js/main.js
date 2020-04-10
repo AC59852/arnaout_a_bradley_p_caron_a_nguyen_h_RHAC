@@ -3,23 +3,6 @@
 // just using this as a working source for right now
 
 
-
-
-Vue.component('card', {
-    props: {
-      paragraph: String
-  
-    },
-    template: `
-    <div class="actionCon">
-        <h4>Heading</h4>
-        <div class="actionIcon"><h3>Icon</h3></div>
-      <p>{{ paragraph }}</p>
-      <a href="https://hivaidsconnection.ca/" class="actionBtn"><h5>Placeholder Btn</h5></a>
-    </div>
-    `
-  })
-
   Vue.component('contact', {
     props: {
       heading: String,
@@ -50,7 +33,7 @@ Vue.component('card', {
     <div id="promoContainer">
       <h3>{{ title }}</h3>
         <div class="vidCon">
-            <div><video :src="'public/video/' + video" controls></video>
+            <video :src="'public/video/' + video" controls></video>
         </div>
     </div>
     `
@@ -88,6 +71,35 @@ Vue.component('card', {
   // replace this with database content later
      
     },
+
+    mounted: function(){
+      
+  let nav = document.querySelector(".toggle-menu"),
+  navBtns = document.querySelectorAll(".navBtn"),
+  helpButton = document.querySelectorAll(".helpBtn"),
+  main = document.querySelector("body");
+
+
+  helpButton.forEach(button => button.addEventListener("click", function(e) {
+    this.classList.toggle("reveal");
+    helpIcon.classList.toggle("transform");
+  }));
+
+
+  nav.addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.querySelector("#menu").classList.toggle("open");
+    main.classList.toggle("noscroll");
+  });
+
+  navBtns.forEach(btn => btn.addEventListener("click", function() {
+    nav.classList.toggle("active");
+    document.querySelector("#menu").classList.toggle("open");
+    main.classList.toggle("noscroll");
+  }));
+
+
+    },
     
     created: function(){
       console.log("this is working");
@@ -97,6 +109,24 @@ Vue.component('card', {
     },
 
     methods: {
+
+      toggleOn() {
+        let regPopup = document.querySelector(".regPopup"),
+            signForm = document.querySelector(".signForm");
+
+        regPopup.classList.toggle("test");
+        signForm.classList.toggle("test");
+      },
+
+      toggleOff() {
+
+        let regPopup = document.querySelector(".regPopup"),
+            signForm = document.querySelector(".signForm");
+
+        regPopup.classList.toggle("test");
+        signForm.classList.toggle("test");
+
+      },
 
       testOn: function() {
         console.log("test");
