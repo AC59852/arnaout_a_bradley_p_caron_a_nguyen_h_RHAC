@@ -102,7 +102,6 @@
     },
     
     created: function(){
-      console.log("this is working");
       this.fetchAbout();
       this.fetchPartners();
       this.fetchHelp();
@@ -114,8 +113,8 @@
         let regPopup = document.querySelector(".regPopup"),
             signForm = document.querySelector(".signForm");
 
-        regPopup.classList.toggle("test");
-        signForm.classList.toggle("test");
+        regPopup.classList.toggle("newsReveal");
+        signForm.classList.toggle("newsReveal");
       },
 
       toggleOff() {
@@ -123,13 +122,9 @@
         let regPopup = document.querySelector(".regPopup"),
             signForm = document.querySelector(".signForm");
 
-        regPopup.classList.toggle("test");
-        signForm.classList.toggle("test");
+        regPopup.classList.toggle("newsReveal");
+        signForm.classList.toggle("newsReveal");
 
-      },
-
-      testOn: function() {
-        console.log("test");
       },
 
       fetchAbout() {
