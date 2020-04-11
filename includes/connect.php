@@ -2,7 +2,7 @@
     require('config.php');
 
     function getAbout($pdo) {
-        $getAbout = 'SELECT * FROM tbl_about';
+        $getAbout = 'SELECT * FROM tbl_aboutInfo';
         $runQuery = $pdo->query($getAbout);
 
         $result = array();

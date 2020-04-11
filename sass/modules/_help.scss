@@ -140,3 +140,105 @@
     margin-bottom: 5%;
 
 }
+
+.regPopup {
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    .signForm {
+        background-color: white;
+        position: relative;
+        padding: 10% 0;
+        width: 90%;
+        margin: 0 auto;
+        top: 30%;
+        transform: translateY(-30%);
+        box-shadow: black 3px 20px 24px -13px;
+        border-radius: 2vw;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        transition-delay: 0.1s;
+        h1 {
+            text-align: center;
+            width: 90%;
+            margin: 4% auto 5%;
+            font-size: 5.6vw;
+            font-weight: bold;
+        }
+
+        span {
+            position: absolute;
+            right: 5%;
+            top: 3%;
+            font-size: 6vw;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                margin: 0 auto;
+    
+                label {
+                    text-align: center;
+                    margin-top: 5%;
+                    color: #191919;
+                    font-family: $main-font;
+                    margin-bottom: 1%;
+                    font-weight: bold;
+                }
+
+                input {
+                    border: solid 2px #191919;
+                    background-color: transparent;
+                    padding: 2% 0 2.2% 1%; 
+                    border-radius: 0.6vw;
+                    transition: background-color, color 0.3s ease-in-out;
+
+                    &::placeholder {
+                        opacity: 1;
+                        color: #191919;
+                    }
+
+                    &:focus {
+                        background-color: #191919;
+                        color: white;
+                    }
+                }
+            }
+            button {
+                width: 50%;
+                padding: 2% 0 2.2%;
+                font-weight: bold;
+                margin: 8% auto 0;
+                background-color: transparent;
+                border: solid 2px #191919;
+                font-family: $main-font;
+                border-radius: 0.6vw;
+                transition: background-color, color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #191919;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.test {
+    visibility: visible;
+    opacity: 1 !important;
+}

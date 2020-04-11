@@ -1,6 +1,6 @@
 <?php
     require_once 'load.php';
-        $infoTable = 'tbl_info';
+        $infoTable = 'tbl_moreInfo';
         $getInfo = getAll($infoTable);
 ?>
 
@@ -27,6 +27,28 @@
 <body>
     <?php include("templates/header.php");?>
     <main id="app">
+    <div class="regPopup">
+    <div class="signForm">
+    <span @click="toggleOff()">X</span>
+    <h1>Sign Up to receive Newsletters, Donate, Volunteer and participate in Events!</h1>
+    <form action="admin/sign-up.php" method="post">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="regEmail" value="" placeholder='Enter Email' required>
+            </div>
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="fname" value="" placeholder='Enter First Name' required>
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lname" value="" placeholder='Enter Last Name' required>
+            </div>
+ 
+            <button name="register">Register</button>
+        </form>
+        </div>
+    </div>
     <section id="hero">
         <h2 class="hidden">Hero</h2>
         <div id="heroCon">
@@ -39,15 +61,10 @@
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
         <ul>
-            <li class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['title']; ?></h2></div>
-            <p class="helpContent"><?php echo $row['description']; ?></p>
-            <p><?php echo $row['description2']; ?></p>
-            <p><?php echo $row['description3']; ?></p>
-            <p><?php echo $row['description4']; ?></p>
-            <p><?php echo $row['description5']; ?></p>
-            <p><?php echo $row['description6']; ?></p>
-            <p><?php echo $row['description7']; ?></p>
-            <a class="helpBtn" target="_blank" href="<?php echo $row['btnLink']; ?>"><?php echo $row['btnName']; ?></a>
+            <li class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
+            <p class="helpContent"><?php echo $row['info_para1']; ?></p>
+            <p><?php echo $row['info_para2']; ?></p>
+            <p><?php echo $row['info_para3']; ?></p>
         </li>
     </ul>
         </div>
@@ -78,7 +95,7 @@
   </div>
   <div id="greenCircle"></div>
   <div id="aboutImg">
-      <img v-bind:src="about.img" alt="image of RHAC group">
+      <img v-bind:src="'public/images/' + about.img" alt="image of RHAC group">
   </div>
 </div>
     </section>
@@ -92,9 +109,15 @@
   </div>
       <!-- lots of text, needs to be figured out -->
       <p>{{ action.para }}</p>
-      <a target="_blank" :href="action.link">{{action.button}}</a>
+      <a :class="action.button" @click.prevent="toggleOn()" :href="action.link">{{action.button}}</a>
   </div>
 </div>
+    </section>
+    <section id="videoSection">
+    <promotion v-for="(promoVideo, index) in promoContent"
+    :key="index"
+    :title="promoVideo.title"
+    :video="promoVideo.video"></promotion>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
@@ -108,6 +131,5 @@
     <?php include("templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
     <script src="public/js/main.js"></script>
-    <script src="public/js/static.js"></script>
 </body>
 </html>
