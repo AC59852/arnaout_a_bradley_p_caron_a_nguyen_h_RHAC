@@ -119,6 +119,11 @@
     :title="promoVideo.title"
     :video="promoVideo.video"></promotion>
     </section>
+    <section id="instaSection">
+    <h3>Our Social Media</h3>
+        <div class="pixleeCon">
+        <div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'JIoovahMTVP5VzYgf4FA'});Pixlee.addSimpleWidget({widgetId:'26508'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    </section>
     <section id="partners">
     <h3>Our Partners</h3>
         <div id="partnerCon">
