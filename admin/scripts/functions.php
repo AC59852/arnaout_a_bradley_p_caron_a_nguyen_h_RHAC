@@ -114,4 +114,22 @@ function addAbout($about_desc1, $about_desc2, $about_image) {
 }
 
 
+function deletePartner($partner_id) {
+    $pdo = Database::getInstance()->getConnection();
+
+    $delete_partner_query = 'DELETE FROM tbl_partners WHERE id=:id';
+
+    $delete_partner_prp = $pdo->prepare($delete_partner_query);
+
+    $delete_partner_result = $delete_partner_prp->execute(array(
+        ':id'=>$partner_id
+    ));
+
+    if($delete_partner_result && $delete_partner_prp->rowCount() > 0) {
+        header('refresh:2,index.php');
+        echo '<h2 style="font-family: arial;">Listing Deleted. Returning to Dashboard</h2>';
+    } else{
+        return false;
+    }
+}
 

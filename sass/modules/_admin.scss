@@ -1,0 +1,161 @@
+.answersAdmin {
+    padding-bottom: 5%;
+    width: 95%;
+    margin: 10% auto;
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        margin-bottom: 10%;
+    }
+
+    .infoAdmin {
+        margin-top: 5%;
+        h2 {
+            font-size: 5vw;
+            font-weight: bold;
+            margin-bottom: 2%;
+        }
+
+        p {
+            font-size: 4.5vw;
+            margin-top: 2%;
+        }
+
+        a {
+            background-color: #942727;
+            color: white;
+            justify-content: center;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 2%;
+            display: flex;
+            margin-top: 8%;
+            margin-bottom: 8%;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+
+        label {
+            text-align: center;
+            margin-top: 10%;
+            font-size: 4vw;
+        }
+
+        input, textarea {
+            margin-top: 3%;
+        }
+
+        textarea {
+            padding-left: 1.5%;
+            padding-top: 1.5%;
+            padding-bottom: 15%;
+        }
+
+        button {
+            width: 60%;
+            padding: 1% 0 1.2%;
+            margin: 4% auto;
+        }
+    }
+}
+
+.partnersAdmin {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        margin-bottom: 10%;
+        width: 95%;
+        text-align: center;
+        margin: 0 auto 10%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        h2 {
+            font-size: 5vw;
+            font-weight: bold;
+            margin-bottom: 2%;
+        }
+
+        a {
+            background-color: #942727;
+            color: white;
+            justify-content: center;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 2%;
+            display: flex;
+            margin-top: 8%;
+            margin-bottom: 8%;
+        }
+    }
+}
+
+.adminheading {
+    display: flex;
+    width: 90%;
+    margin: 3% auto;
+    justify-content: space-between;
+    h2, a{
+        font-size: 5vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: #942727;
+    }
+}
+.login {
+
+    width: 75%;
+    margin: 15% auto 0;
+
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5%;
+            font-size: 5vw;
+        }
+
+        input {
+            font-size: 5vw;
+            margin-bottom: 5%;
+
+            &::placeholder {
+                font-size: 5vw;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: #192981;
+            width: 55%;
+            margin: 0 auto;
+            font-size: 5vw;
+            color: white;
+            padding: 2% 0 2.2%;
+        }
+    }
+}
