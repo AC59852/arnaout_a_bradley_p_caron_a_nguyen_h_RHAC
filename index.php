@@ -121,8 +121,7 @@
     </section>
     <section id="instaSection">
     <h3>Our Social Media</h3>
-        <div class="pixleeCon">
-        <div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'JIoovahMTVP5VzYgf4FA'});Pixlee.addSimpleWidget({widgetId:'26508'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
