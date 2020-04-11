@@ -851,6 +851,14 @@
         }
     }
 
+    .answersAdmin {
+        .infoAdmin {
+            a {
+                font-size: 2vw;
+            }
+        }
+    }
+
     .partnersAdmin {
         .info {
             width: 28%;
@@ -861,6 +869,10 @@
 
             img {
                 width: 60%;
+            }
+
+            a {
+                font-size: 2vw;
             }
         }
     }
