@@ -608,26 +608,33 @@
     }
 
     #aboutSection {
-        #aboutImg {
-            height: 39vw;
-            width: 39vw;
-            margin-top: -52%;
-            margin-left: 66%;
-            img {
-                width: 165%;
-                top: -15%;
-                left: -68%;
+        #aboutText {
+            margin-left: 16%;
+            p {
+                font-size: 1.6vw;
+                width: 42%;
+                line-height: 2.8vw;
+            }
+            a{
+                font-size: 1.6vw;
+                padding: 1% 4% 1% 3%;
+                border-radius: 1vw;
             }
         }
+        #aboutImg {
+            height: 34vw;
+            width: 34vw;
+            margin-top: -46%;
+            margin-left: 67%;
+            img {
+                width: 134%;
+                top: 0;
+                left: -29%;
+            }
+    }
 
         h3 {
             width: 29%;
-        }
-
-        #aboutText {
-            a {
-                font-size: 2.3vw;
-            }
         }
     }
 
