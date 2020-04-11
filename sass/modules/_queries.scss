@@ -443,7 +443,7 @@
     }
 
     .reveal {
-        height: 89vw !important;
+        height: 59vw !important;
     }
 
     #help {
@@ -648,7 +648,7 @@
             li {
                 height: 7.5vw;
                 h2 {
-                    font-size: 2vw;
+                    font-size: 1.7vw;
                     padding-top: 2.5%;
                 }
                 p {
@@ -787,6 +787,35 @@
         }
     }
 
+    .reveal {
+        height: 45vw !important;
+    }
+
+    .infoObject {
+        ul {
+            li {
+                .helpTitle {
+                    padding-bottom: 1%;
+                }
+
+                img {
+                    width: 2.6%;
+                }
+            }
+        }
+    }
+
+    .navSocials {
+        width: 35%;
+        svg {
+            width: 9%;
+        }
+    
+        svg:nth-child(6) {
+            width: 4.5%;
+        }
+    }
+
     .regPopup {
         .signForm {
             width: 75%;
@@ -922,11 +951,11 @@
 .navSocials {
     width: 25%;
     svg {
-        width: 10%;
+        width: 9%;
     }
 
     svg:nth-child(6) {
-        width: 5%;
+        width: 4.5%;
     }
 }
 
