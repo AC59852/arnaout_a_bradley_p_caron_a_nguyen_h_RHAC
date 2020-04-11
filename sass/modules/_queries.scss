@@ -212,6 +212,11 @@
             }
         }
     }
+
+    #promoContainer div {
+        width: 75%;
+        margin: -5% auto 5%;
+    }
 }
 
 
@@ -662,7 +667,11 @@
     }
 
     #partnerCon ul > li {
-        width: 29%;
+        width: 18%;
+    }
+
+    #partnerCon ul li a img {
+        width: 80%;
     }
 
     .footerSocial {
