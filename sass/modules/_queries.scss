@@ -217,6 +217,79 @@
         width: 75%;
         margin: -5% auto 5%;
     }
+
+    .answersAdmin {
+        .infoAdmin {
+            margin: 0 auto;
+            h2 {
+                font-size: 4vw;
+            }
+
+            p {
+                font-size: 3vw;
+            }
+
+            a {
+                width: 15%;
+                margin: 5% 0 10%;
+            }
+        }
+
+        form {
+            label {
+                font-size: 3vw;
+                margin-top: 2%;
+            }
+
+            input, textarea {
+                width: 55%;
+                margin: 2% auto;
+            }
+
+            button {
+                width: 30%;
+            }
+        }
+    }
+
+    .partnersAdmin {
+        justify-content: space-evenly;
+        .info {
+            width: 45%;
+            margin-top: 5%;
+
+            h2 {
+                font-size: 2.4vw;
+            }
+
+            a {
+                width: 40%;
+                margin: 5% auto;
+                padding: 3% 0;
+            }
+        }
+    }
+
+    .login {
+        width: 68%;
+        .loginForm {
+            label {
+                font-size: 4vw;
+                margin-bottom: 2%;
+            }
+
+            input {
+                font-size: 4vw;
+                padding: 2% 0 2.2% 2%;
+                margin-bottom: 4%;
+            }
+
+            button {
+                width: 40%;
+                font-size: 3.5vw;
+            }
+        } 
+    }
 }
 
 
@@ -525,6 +598,29 @@
             }
         }
     }
+
+    .answersAdmin {
+        .infoAdmin {
+            h2 {
+                font-size: 3vw;
+            }
+
+            p {
+                font-size: 2vw;
+                width: 80%;
+            }
+        }
+
+        form {
+            label {
+                font-size: 2vw;
+            }
+
+            input, textarea {
+                margin: 1% auto;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1192px) {
@@ -729,6 +825,51 @@
                         font-size: 1.6vw;
                     }
                 }
+            }
+        }
+    }
+
+    .partnersAdmin {
+        .info {
+            width: 28%;
+            
+            h2 {
+                font-size: 1.5vw;
+            }
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    .adminheading {
+        h2, a {
+            font-size: 3vw;
+        }
+    }
+
+    .login {
+        margin-top: 5%;
+
+        .loginForm {
+            label {
+                font-size: 3vw;
+            }
+
+            input {
+                font-size: 2.5vw;
+                padding: 1% 0 1.1% 0.5%;
+
+                &::placeholder {
+                    font-size: 2.5vw;
+                }
+            }
+
+            button {
+                width: 20%;
+                font-size: 2.2vw;
+                padding: 1% 0 1.1%;
             }
         }
     }

@@ -5,9 +5,11 @@
 
     $info_table = 'tbl_moreInfo';
     $about_table = 'tbl_aboutInfo';
+    $partners_table = 'tbl_partners';
 
     $getTblInfo = getAll($info_table);
     $getTblAbout = getAll($about_table);
+    $getTblPartner = getAll($partners_table);
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +17,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/main.css">
     <title>Admin Panel</title>
 </head>
 <body>
+    <div class="adminheading">
     <h2>Hello, <?php echo $_SESSION['user_name']; ?></h2>
-    <?php echo !empty($message)? $message: ''?>
-
-    <div>
+    <a class="adminLogout" href="admin_logout.php">Sign Out</a>
+</div>
+<?php echo !empty($message)? $message: ''?>
+    <div class="answersAdmin">
+        <h1>I Need Answers Section</h1>
         <?php while($row = $getTblInfo->fetch(PDO::FETCH_ASSOC)):?>
-        <div class="info">
+        <div class="infoAdmin">
             <h2><?php echo $row['info_title']?></h2>
             <p><?php echo $row['info_para1']?></p>
             <p><?php echo $row['info_para2']?></p>
@@ -47,15 +55,16 @@
 
         <button type="submit" name="infosubmit">Submit Info</button>
     </form>
-
-        <?php while($row = $getTblAbout->fetch(PDO::FETCH_ASSOC)):?>
-        <div class="info">
-            <h2><?php echo $row['para']?></h2>
-            <h2><?php echo $row['para2']?></h2>
-        </div>
-        <?php endwhile;?>
     </div>
-
+    
+    <div class="answersAdmin">
+    <h1>About Section</h1>
+        <?php while($row = $getTblAbout->fetch(PDO::FETCH_ASSOC)):?>
+            <div class="infoAdmin">
+                <p><?php echo $row['para']?></p>
+                <p><?php echo $row['para2']?></p>
+            </div>
+            <?php endwhile;?>
     <div>
     <?php echo !empty($message)? $message: ''?>
 
@@ -75,11 +84,21 @@
     </form>
 
         </div>
-
+    </div>
     </div>
 
+    <div class="partnersAdmin">
+    <h1>Partners Section</h1>
+        <?php while($row = $getTblPartner->fetch(PDO::FETCH_ASSOC)):?>
+            <div class="info">
+                <img src="../public/images/<?php echo $row['img']?>">
+                <h2><?php echo $row['name']?></h2>
+                <a href="admin_deletepartner.php?id=<?php echo $row['id']; ?>">Delete</a>
+            </div>
+            <?php endwhile;?>
+    </div>
     <div>
-
     </div>
+
 </body>
 </html>

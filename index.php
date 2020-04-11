@@ -123,7 +123,7 @@
     <h3>Our Partners</h3>
         <div id="partnerCon">
             <ul>
-                <li v-for="partner in partners"><a target="_blank" href=""><img v-bind:src="partner.img" alt="partner logo"></a></li>
+                <li v-for="partner in partners"><a target="_blank" href=""><img v-bind:src="'public/images/' + partner.img" alt="partner logo"></a></li>
             </ul>
         </div>
     </section>

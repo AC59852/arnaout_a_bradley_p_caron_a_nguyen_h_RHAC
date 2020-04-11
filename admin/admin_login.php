@@ -21,11 +21,15 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/wvm1igw.css">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/main.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
 </head>
 <body>
     <?php echo !empty($message)?$message: '' ?>
+    <div class="login">
     <form class="loginForm" action="admin_login.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" name="username" value="">
@@ -35,5 +39,6 @@ if(isset($_POST['submit'])) {
         
         <button name="submit">Login</button>
     </form>
+    <div>
 </body>
 </html>
