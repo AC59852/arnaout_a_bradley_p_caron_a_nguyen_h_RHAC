@@ -376,10 +376,20 @@
 
 @media screen and (min-width: 1024px) {
 
+    #pixlee_container {
+        height: 43vw !important;
+    }
+
     #promoContainer {
         margin-top: 13%;
         h3 {
             width: 32%;
+        }
+    }
+
+    #instaSection{
+        h3 {
+            width: 38%;
         }
     }
 
@@ -633,6 +643,12 @@
 
 @media screen and (min-width: 1280px) {
 
+    #instaSection{
+        h3 {
+            width: 31%;
+        }
+    }
+
     #promoContainer {
         h3 {
             width: 25%;
@@ -776,6 +792,12 @@
 
 }
 
+@media screen and (min-width: 1300px) {
+    #pixlee_container {
+        height: 28vw !important;
+    }
+}
+
 @media screen and (min-width: 1366px) {
     .contact {
         width: 50%;
@@ -906,6 +928,12 @@
                 padding: 1% 0 1.1%;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #pixlee_container {
+        height: 20vw !important;
     }
 }
 
