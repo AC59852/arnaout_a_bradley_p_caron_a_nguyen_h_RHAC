@@ -2,7 +2,7 @@
 function getAll($tbl){
     $pdo = Database::getInstance()->getConnection();
 
-    $queryAll = 'SELECT * FROM '.$tbl;
+    $queryAll = 'SELECT * FROM tbl_moreInfo ORDER BY info_id';
     $results = $pdo->query($queryAll);
 
     if($results){

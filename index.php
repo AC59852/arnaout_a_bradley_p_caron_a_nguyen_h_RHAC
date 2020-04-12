@@ -60,7 +60,7 @@
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
         <div>
-            <div class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
+            <div class="helpBtn <?php echo $row['info_id']?>"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
             <p class="helpContent"><?php echo $row['info_para1']; ?></p>
             <p><?php echo $row['info_para2']; ?></p>
             <p><?php echo $row['info_para3']; ?></p>
