@@ -101,6 +101,9 @@
 
             <label>Partner Name</label>
             <input type="text" name="partnername" value=""></input>
+
+            <label>Partner Link (Optional)</label>
+            <input type="text" name="partnerlink" value=""></input>
             
         <button type="submit" name="partnerSubmit">Add Product</button>
     </form>

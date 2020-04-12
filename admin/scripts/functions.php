@@ -103,7 +103,7 @@ function deletePartner($partner_id) {
     }
 }
 
-function addPartner($partner_name, $partner_image) {
+function addPartner($partner_name, $partner_image, $partner_link) {
 
     try {
         $pdo = Database::getInstance()->getConnection();
@@ -131,7 +131,7 @@ function addPartner($partner_name, $partner_image) {
         }
 
         // query for inserting a new info into the table based on given variables
-        $update_partner_sql = 'INSERT INTO tbl_newPartner(name, img) VALUES(:name, :img)';
+        $update_partner_sql = 'INSERT INTO tbl_newPartner(name, img, link) VALUES(:name, :img, :link)';
 
         $update_partner      = $pdo->prepare($update_partner_sql);
 
@@ -140,6 +140,7 @@ function addPartner($partner_name, $partner_image) {
             array(
                 ':name'=>$partner_name,
                 ':img'=>$generated_filename,
+                ':link'=>$partner_link
             )
         );
 

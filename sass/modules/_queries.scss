@@ -865,6 +865,20 @@
 
 @media screen and (min-width: 1280px) {
 
+    .mainFooter {
+
+        .footerSocial {
+            width: 24%;
+            padding-top: 0;
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+    
+         h4 {
+            font-size: 1.2vw;
+        }
+    }
+
     #promoContainer {
         div {
             width: 60%;
@@ -1282,6 +1296,21 @@
 
 .partnerForm {
     input, textarea {
+        font-size: 1vw;
+    }
+}
+
+.mainFooter {
+    padding-bottom: 1%;
+
+    .footerSocial {
+        width: 18%;
+        padding-top: 0;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+     h4 {
         font-size: 1vw;
     }
 }

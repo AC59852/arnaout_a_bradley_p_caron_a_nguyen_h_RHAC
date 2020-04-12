@@ -83,7 +83,6 @@
 
   helpButton.forEach(button => button.addEventListener("click", function(e) {
     this.classList.toggle("reveal");
-    helpIcon.classList.toggle("transform");
   }));
 
 

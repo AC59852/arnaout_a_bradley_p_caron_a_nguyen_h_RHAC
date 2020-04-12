@@ -11,7 +11,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="public/favIcon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="public/favIcon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="public/favIcon/favicon-16x16.png">
@@ -127,7 +126,7 @@
     <h3>Our Partners</h3>
         <div id="partnerCon">
             <ul>
-                <li v-for="partner in partners"><a target="_blank" href=""><img v-bind:src="'public/images/' + partner.img" alt="partner logo"></a></li>
+                <li v-for="partner in partners"><a target="_blank" :href="partner.link"><img v-bind:src="'public/images/' + partner.img" alt="partner logo"></a></li>
             </ul>
         </div>
     </section>
