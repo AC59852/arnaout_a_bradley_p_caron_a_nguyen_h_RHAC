@@ -22,6 +22,14 @@
             font-weight: bold;
             text-transform: uppercase;
             border-radius: 8px;
+            border: solid 3px #ffe274;
+            transition: color, background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #191919;
+                color: #ffe274;
+                border: solid 3px #191919;
+            }
         }
     }
     #aboutImg {

@@ -39,6 +39,14 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 4vw;
+                border: solid 3px white;
+                transition: color, background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: white;
+                    color: #c43e40;
+                    border: solid 3px #c43e40;
+                }
             }
         }
     }

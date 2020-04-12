@@ -166,3 +166,20 @@ $hamburger-zindex: $menu-zindex + 10;
     width: 105%;
   }
 }
+
+.navSocials {
+  &:hover {
+    path {
+      opacity: 0.5;
+    }
+  }
+
+  path, polygon {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

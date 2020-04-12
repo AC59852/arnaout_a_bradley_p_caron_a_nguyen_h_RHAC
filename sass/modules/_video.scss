@@ -1,10 +1,25 @@
 #promoContainer {
-    margin-top: 20%;
     h3 {
         width: 50%;
     }
     div {
         width: 95%;
         margin: 0 auto;
+    }
+}
+
+#videoSection {
+    margin-top: 10%;
+    h3 {
+        font-size: 3.2vw;
+        width: 93%;
+        line-height: 9.5vw;
+        color: #57bab5;
+        border: none;
+        margin-bottom: 5%;
+
+        span {
+            border-bottom: solid 1vw;
+        }
     }
 }

@@ -17,11 +17,12 @@
                 border-top: 3px white solid;
             }
             h2 {
-                padding: 5% 0 5% 3%;
+                padding: 5% 0 7% 3%;
                 font-weight: 600;
                 width: 97%;
                 font-size: 4.2vw;
-                background-color: #c43e40;
+                background-color: #AB3739;
+                box-shadow: rgba(87, 87, 87, 0.534) 0 4px 5px;
             }
             img {
                 cursor: pointer;
@@ -43,22 +44,6 @@
                 color: white;
                 }
             }
-
-            a {
-                text-decoration: none;
-            }
-             .helpBtn {
-                 margin-top: 2%;
-                 margin-left: 2%;
-                 padding: 2.5% 5% 2.5% 5%;
-                 background-color: #ffe274;
-                 color: black;
-                 width: 35%;
-                 border-radius: 2vw;
-                 font-weight: bold;
-                 text-transform: uppercase;
-                 text-align: center;
-             }
         }
         
     }
@@ -116,9 +101,6 @@
     }
 }
 
-.contact2 {
-    margin-bottom: 4%;
-}
 
 .contactLink {
     text-align: center;
@@ -132,6 +114,14 @@
         border-radius: 2vw;
         font-size: 4vw;
         font-weight: bold;
+        border: solid 3px white;
+        transition: color, background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: white;
+                color: #c43e40;
+                border: solid 3px #c43e40;
+            }
     }
 }
 

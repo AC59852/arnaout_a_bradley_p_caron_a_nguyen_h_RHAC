@@ -77,6 +77,7 @@
             :heading="contactInfo.heading"
             :content1="contactInfo.content1"
             :content2="contactInfo.content2"
+            :content3="contactInfo.content3"
             :icon="contactInfo.icon"></contact>
         </div>
         <div class="contactLink">
@@ -113,9 +114,9 @@
 </div>
     </section>
     <section id="videoSection">
+    <h3><span>Have</span> The conversation <span>change</span> the connotation</h3>
     <promotion v-for="(promoVideo, index) in promoContent"
     :key="index"
-    :title="promoVideo.title"
     :video="promoVideo.video"></promotion>
     </section>
     <section id="instaSection">
