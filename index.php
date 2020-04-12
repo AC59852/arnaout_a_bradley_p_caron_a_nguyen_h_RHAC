@@ -121,7 +121,7 @@
     </section>
     <section id="instaSection">
     <h3>Our Social Media</h3>
-    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div>
+    <div class='embedsocial-instagram' data-ref="03754c7b0dcc3044fd6ec8fbb093cb5d9613b274"></div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
