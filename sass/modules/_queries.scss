@@ -9,13 +9,13 @@
             }
         }
 
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 87%;
         }
     }
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 .helpBtn {
                     width: 150px;
                 }
@@ -32,7 +32,7 @@
                 width: 150%;
             }
         }
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 73%;
         }
     }
@@ -47,7 +47,7 @@
             }
         }
 
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 55%;
         }
     }
@@ -76,8 +76,8 @@
 
 @media screen and (min-width: 768px) {
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 height: 13.5vw;
                 h2 {
                     font-size: 4vw;
@@ -219,36 +219,71 @@
     }
 
     .answersAdmin {
+        margin: 5% auto;
+
         .infoAdmin {
             margin: 0 auto;
             h2 {
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             p {
-                font-size: 3vw;
+                font-size: 2.5vw;
+                line-height: 3vw;
             }
 
             a {
                 width: 15%;
                 margin: 5% 0 10%;
+                padding: 1.5% 2% 2%;
+                font-size: 2.5vw;
             }
         }
 
         form {
             label {
-                font-size: 3vw;
+                font-size: 2.8vw;
                 margin-top: 2%;
             }
 
             input, textarea {
                 width: 55%;
                 margin: 2% auto;
+                font-size: 1.3vw;
+            }
+
+            textarea {
+                padding-bottom: 10%;
             }
 
             button {
                 width: 30%;
+                font-size: 2.5vw;
+                padding-bottom: 1.9%;
             }
+        }
+    }
+
+    .partnerForm {
+        label {
+            font-size: 2.8vw;
+            margin-top: 2%;
+        }
+
+        input, textarea {
+            width: 55%;
+            margin: 2% auto;
+            font-size: 1.3vw;
+        }
+
+        textarea {
+            padding-bottom: 10%;
+        }
+
+        button {
+            width: 30%;
+            font-size: 2.5vw;
+            padding-bottom: 1.9%;
         }
     }
 
@@ -256,16 +291,21 @@
         justify-content: space-evenly;
         .info {
             width: 45%;
-            margin-top: 5%;
+            margin-top: 0;
+
+            img {
+                width: 50%;
+            }
 
             h2 {
                 font-size: 2.4vw;
             }
 
             a {
-                width: 40%;
-                margin: 5% auto;
-                padding: 3% 0;
+                width: 35%;
+                margin: 5% auto 10%;
+                padding: 1.8% 2% 2.2%;
+                font-size: 2.5vw;
             }
         }
     }
@@ -428,8 +468,8 @@
     }
 
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 height: 9.5vw;
                 h2 {
                     font-size: 2.5vw;
@@ -547,15 +587,12 @@
 
     .footerSocial {
         width: 33%;
-        a:nth-child(1) {
-            margin-top: auto;
-        }
 
     }
 
     .navSocials {
         margin-top: 3%;
-        width: 45%;
+        width: 35%;
         svg {
             width: 9%;
         }
@@ -631,6 +668,16 @@
             }
         }
     }
+
+    .partnerForm {
+        label {
+            font-size: 2vw;
+        }
+
+        input, textarea {
+            margin: 1% auto;
+        }
+    }
 }
 
 @media screen and (min-width: 1192px) {
@@ -639,9 +686,132 @@
             max-width: 100px;
         }
     }
+
+    .answersAdmin {
+        width: 80%;
+        h1 {
+            font-size: 4vw;
+            margin-bottom: 4%;
+        }
+        .infoAdmin {
+            a {
+                font-size: 1.5vw;
+                padding: 1% 2% 1.3%;
+                width: 11%;
+                margin: 3% 0 4%;
+            }
+
+            p {
+                font-size: 1.5vw;
+                width: 80%;
+                line-height: 2vw;
+            }
+
+            h2 {
+                font-size: 2vw;
+                margin-bottom: 2%;
+            }
+        }
+
+        form {
+            input {
+                margin: 1% auto;
+                font-size: 1vw;
+                width: 56%;
+            }
+            label {
+                font-size: 1.5vw;
+                margin-top: 2%;
+            }
+
+            button {
+                width: 21%;
+                font-size: 1.2vw;
+                padding-bottom: 1.4%;
+                padding-top: 1.4%;
+                margin: 2% auto;
+
+            }
+        }
+    }
+
+    .partnerForm {
+        input {
+            margin: 1% auto;
+            font-size: 1vw;
+            width: 56%;
+        }
+        label {
+            font-size: 1.5vw;
+            margin-top: 2%;
+        }
+
+        button {
+            width: 21%;
+            font-size: 1.2vw;
+            padding-bottom: 1.4%;
+            padding-top: 1.4%;
+            margin: 2% auto;
+
+        }
+    }
+
+    .partnersAdmin {
+        h1 {
+            font-size: 4vw;
+            margin-bottom: 4%;
+        }
+        .info {
+            width: 28%;
+            
+            h2 {
+                font-size: 1.3vw;
+            }
+
+            img {
+                width: 55%;
+            }
+
+            a {
+                font-size: 1.3vw;
+                padding: 2% 2% 2.5%;
+                width: 25%;
+                margin: 3% auto 4%;
+            }
+        }
+    }
+
+    .adminheading {
+        h2, a {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #actionSection {
+        div {
+            p {
+                font-size: 1.85vw;
+            }
+            div {
+                a {
+                    font-size: 1.6vw;
+                    width: 48%;
+                    border-radius: 0.5vw;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
+
+    #promoContainer {
+        div {
+            width: 60%;
+        }
+    }
 
     #instaSection{
         h3 {
@@ -660,8 +830,8 @@
         font-size: 3vw !important;
     }
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 height: 7.5vw;
                 h2 {
                     font-size: 1.7vw;
@@ -764,8 +934,8 @@
             }
             div {
                 a {
-                    font-size: 1.4vw;
-                    width: 45%;
+                    font-size: 1.2vw;
+                    width: 35%;
                     padding: 3.1% 2.5%;
                 }
             }
@@ -814,8 +984,8 @@
     }
 
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 .helpTitle {
                     padding-bottom: 1%;
                 }
@@ -824,17 +994,6 @@
                     width: 2.6%;
                 }
             }
-        }
-    }
-
-    .navSocials {
-        width: 35%;
-        svg {
-            width: 9%;
-        }
-    
-        svg:nth-child(6) {
-            width: 4.5%;
         }
     }
 
@@ -873,37 +1032,6 @@
         }
     }
 
-    .answersAdmin {
-        .infoAdmin {
-            a {
-                font-size: 2vw;
-            }
-        }
-    }
-
-    .partnersAdmin {
-        .info {
-            width: 28%;
-            
-            h2 {
-                font-size: 1.5vw;
-            }
-
-            img {
-                width: 60%;
-            }
-
-            a {
-                font-size: 2vw;
-            }
-        }
-    }
-
-    .adminheading {
-        h2, a {
-            font-size: 3vw;
-        }
-    }
 
     .login {
         margin-top: 5%;
@@ -1029,6 +1157,32 @@
                 margin: 3% auto 1%;
             }
         }
+    }
+}
+
+.answersAdmin {
+    .infoAdmin {
+        p {
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+        }
+
+        a {
+            font-size: 1vw;
+            width: 7%;
+        }
+    }
+
+    form {
+        input, textarea {
+            font-size: 1vw;
+        }
+    }
+}
+
+.partnerForm {
+    input, textarea {
+        font-size: 1vw;
     }
 }
 }

@@ -60,13 +60,13 @@
         <h3>I need answers</h3>
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
-        <ul>
-            <li class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
+        <div>
+            <div class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
             <p class="helpContent"><?php echo $row['info_para1']; ?></p>
             <p><?php echo $row['info_para2']; ?></p>
             <p><?php echo $row['info_para3']; ?></p>
-        </li>
-    </ul>
+    </div>
+    </div>
         </div>
     <?php endwhile;?>
     </section>
@@ -121,7 +121,7 @@
     </section>
     <section id="instaSection">
     <h3>Our Social Media</h3>
-    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
@@ -135,5 +135,6 @@
     <?php include("templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
     <script src="public/js/main.js"></script>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
 </body>
 </html>

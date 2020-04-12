@@ -5,7 +5,7 @@
 
     $info_table = 'tbl_moreInfo';
     $about_table = 'tbl_aboutInfo';
-    $partners_table = 'tbl_partners';
+    $partners_table = 'tbl_newPartner';
 
     $getTblInfo = getAll($info_table);
     $getTblAbout = getAll($about_table);
@@ -70,9 +70,6 @@
 
         <div>
         <form action="admin_addabout.php" method="post" enctype="multipart/form-data">
-        <label>About Image</label>
-        <input type="file" name="aboutimg" value="">
-
 
         <label>About Description 1</label>
         <textarea name="aboutdesc1"></textarea>
@@ -98,6 +95,15 @@
             <?php endwhile;?>
     </div>
     <div>
+    <form action="admin_addpartner.php" class="partnerForm" method="post" enctype="multipart/form-data">
+            <label>Partner Image</label>
+            <input type="file" name="partnerimg" value="">
+
+            <label>Partner Name</label>
+            <input type="text" name="partnername" value=""></input>
+            
+        <button type="submit" name="partnerSubmit">Add Product</button>
+    </form>
     </div>
 
 </body>

@@ -1,18 +1,17 @@
 .infoObject {
     color: white;
-    ul {
-        li {
+    div {
+        div {
             position: relative;
             display: flex;
             flex-direction: column;
-            height:14.3vw;
+            height:13.3vw;
             transition: height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             background-color: rgba(196,62,64,0.98);
-            overflow-y: hidden;
             .helpTitle {
                 display: flex;
                 flex-direction: row;
-                padding-bottom: 14%;
+                line-height: 2vw;
             }
             h2 {
                 border-top: 3px white solid;
@@ -38,6 +37,7 @@
                 font-size: 5vw;
                 line-height: 5.7vw;
                 margin: 3% auto 0 auto;
+                overflow-y: hidden;
                 a {
                     text-decoration: underline white;
                 color: white;

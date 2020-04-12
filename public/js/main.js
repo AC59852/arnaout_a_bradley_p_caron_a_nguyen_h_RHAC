@@ -106,6 +106,8 @@
       this.fetchAbout();
       this.fetchPartners();
       this.fetchHelp();
+
+      
     },
 
     methods: {

@@ -62,12 +62,53 @@ function deleteInfo($info_id) {
 
 
 
-function addAbout($about_desc1, $about_desc2, $about_image) {
+function addAbout($about_desc1, $about_desc2) {
+
+        $pdo = Database::getInstance()->getConnection();
+
+        // query for inserting a new info into the table based on given variables
+        $update_about_sql = 'UPDATE tbl_aboutInfo SET para =:desc1, para2 =:desc2 WHERE id=1';
+
+        $update_about      = $pdo->prepare($update_about_sql);
+
+        // variable definitions
+        $update_about_result = $update_about->execute(
+            array(
+                ':desc1'=>$about_desc1,
+                ':desc2'=>$about_desc2,
+            )
+        );
+
+        // confirm to the admin that the info was added
+        redirect_to('index.php?createAbout=info Listing Created');
+    }
+
+
+function deletePartner($partner_id) {
+    $pdo = Database::getInstance()->getConnection();
+
+    $delete_partner_query = 'DELETE FROM tbl_newPartner WHERE id=:id';
+
+    $delete_partner_prp = $pdo->prepare($delete_partner_query);
+
+    $delete_partner_result = $delete_partner_prp->execute(array(
+        ':id'=>$partner_id
+    ));
+
+    if($delete_partner_result && $delete_partner_prp->rowCount() > 0) {
+        header('refresh:2,index.php');
+        echo '<h2 style="font-family: arial;">Listing Deleted. Returning to Dashboard</h2>';
+    } else{
+        return false;
+    }
+}
+
+function addPartner($partner_name, $partner_image) {
 
     try {
         $pdo = Database::getInstance()->getConnection();
 
-        $cover          = $about_image;
+        $cover          = $partner_image;
 
         // define the file types supported
         $upload_file    = pathinfo($cover['name']);
@@ -90,46 +131,26 @@ function addAbout($about_desc1, $about_desc2, $about_image) {
         }
 
         // query for inserting a new info into the table based on given variables
-        $update_about_sql = 'UPDATE tbl_aboutInfo SET para =:desc1, img =:img, para2 =:desc2 WHERE id=1';
+        $update_partner_sql = 'INSERT INTO tbl_newPartner(name, img) VALUES(:name, :img)';
 
-        $update_about      = $pdo->prepare($update_about_sql);
+        $update_partner      = $pdo->prepare($update_partner_sql);
 
         // variable definitions
-        $update_about_result = $update_about->execute(
+        $update_partner_result = $update_partner->execute(
             array(
-                ':desc1'=>$about_desc1,
+                ':name'=>$partner_name,
                 ':img'=>$generated_filename,
-                ':desc2'=>$about_desc2,
             )
         );
 
         // confirm to the admin that the info was added
-        redirect_to('index.php?createAbout=info Listing Created');
+        redirect_to('index.php?createPartner=info Listing Created');
     } catch (Exception $e) {
 
         // if any errors occur, display the error message
         $error = $e->getMessage();
         return $error;
     }
-}
 
-
-function deletePartner($partner_id) {
-    $pdo = Database::getInstance()->getConnection();
-
-    $delete_partner_query = 'DELETE FROM tbl_partners WHERE id=:id';
-
-    $delete_partner_prp = $pdo->prepare($delete_partner_query);
-
-    $delete_partner_result = $delete_partner_prp->execute(array(
-        ':id'=>$partner_id
-    ));
-
-    if($delete_partner_result && $delete_partner_prp->rowCount() > 0) {
-        header('refresh:2,index.php');
-        echo '<h2 style="font-family: arial;">Listing Deleted. Returning to Dashboard</h2>';
-    } else{
-        return false;
-    }
 }
 
