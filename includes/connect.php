@@ -16,7 +16,7 @@
     }
 
     function getPartners($pdo) {
-        $getPartners = 'SELECT * FROM tbl_partners';
+        $getPartners = 'SELECT * FROM tbl_newPartner';
         $runQuery2 = $pdo->query($getPartners);
 
         $result2 = array();

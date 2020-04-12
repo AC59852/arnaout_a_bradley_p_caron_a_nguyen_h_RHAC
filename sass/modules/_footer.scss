@@ -7,15 +7,33 @@
     a {
         width: 100%;
 
-        object {
-        width: 60%;
+        img {
+        width: 50%;
     }
 
     }
-    a:nth-child(3) {
+    a:nth-child(5) {
         width: 50%;
     }
-}
+
+    a:nth-child(4) {
+        margin-top: 1.5%;
+    }
+        &:hover {
+          img {
+            opacity: 0.5;
+          }
+        }
+      
+        img {
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+          transition: opacity 0.3s ease-in-out;
+          &:hover {
+            opacity: 1;
+          }
+        }
+    }
 
 .mainFooter {
     background-color: #c43e40;

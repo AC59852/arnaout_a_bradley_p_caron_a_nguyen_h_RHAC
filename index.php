@@ -1,7 +1,7 @@
 <?php
     require_once 'load.php';
         $infoTable = 'tbl_moreInfo';
-        $getInfo = getAll($infoTable);
+        $getInfo = getInfoTbl($infoTable);
 ?>
 
 
@@ -11,7 +11,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="public/favIcon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="public/favIcon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="public/favIcon/favicon-16x16.png">
@@ -60,13 +59,13 @@
         <h3>I need answers</h3>
     <?php while($row = $getInfo->fetch(PDO::FETCH_ASSOC)):?>
         <div class="infoObject">
-        <ul>
-            <li class="helpBtn"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
+        <div>
+            <div class="helpBtn <?php echo $row['info_id']?>"><div class="helpTitle"><img class="helpImg" src="public/images/Arrow.svg" alt="arrow"><h2><?php echo $row['info_title']; ?></h2></div>
             <p class="helpContent"><?php echo $row['info_para1']; ?></p>
             <p><?php echo $row['info_para2']; ?></p>
             <p><?php echo $row['info_para3']; ?></p>
-        </li>
-    </ul>
+    </div>
+    </div>
         </div>
     <?php endwhile;?>
     </section>
@@ -78,6 +77,7 @@
             :heading="contactInfo.heading"
             :content1="contactInfo.content1"
             :content2="contactInfo.content2"
+            :content3="contactInfo.content3"
             :icon="contactInfo.icon"></contact>
         </div>
         <div class="contactLink">
@@ -114,20 +114,20 @@
 </div>
     </section>
     <section id="videoSection">
+    <h3><span>Have</span> The conversation <span>change</span> the connotation</h3>
     <promotion v-for="(promoVideo, index) in promoContent"
     :key="index"
-    :title="promoVideo.title"
     :video="promoVideo.video"></promotion>
     </section>
     <section id="instaSection">
     <h3>Our Social Media</h3>
-    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+    <div class='embedsocial-instagram' data-ref="431940c3ef5e01f8f2a9e12fe88a2997a639ece2"></div>
     </section>
     <section id="partners">
     <h3>Our Partners</h3>
         <div id="partnerCon">
             <ul>
-                <li v-for="partner in partners"><a target="_blank" href=""><img v-bind:src="'public/images/' + partner.img" alt="partner logo"></a></li>
+                <li v-for="partner in partners"><a target="_blank" :href="partner.link"><img v-bind:src="'public/images/' + partner.img" alt="partner logo"></a></li>
             </ul>
         </div>
     </section>
@@ -135,5 +135,6 @@
     <?php include("templates/footer.php");?>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
     <script src="public/js/main.js"></script>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
 </body>
 </html>

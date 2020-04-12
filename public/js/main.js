@@ -9,6 +9,7 @@
       heading: String,
       content1: String,
       content2: String,
+      content3: String,
       icon: String
   
     },
@@ -17,8 +18,9 @@
     <div class="contactCon">
       <div><img :src="'public/images/' + icon" alt="Contact Icon">
             <h4>{{ heading }}</h4>
-            <h5>{{ content1 }}</h5>
+            <a href="tel:+18669201601"><h5>{{ content1 }}</h5></a>
             <h5 class="contact2">{{ content2 }}</h5>
+            <h5 class="contact3">{{ content3 }}</h5>
       </div>
     </div>
     `
@@ -26,13 +28,11 @@
 
   Vue.component('promotion', {
     props: {
-      title: String,
       video: String
     },
 
     template: `
     <div id="promoContainer">
-      <h3>{{ title }}</h3>
         <div class="vidCon">
             <video :src="'public/video/' + video" controls></video>
         </div>
@@ -61,12 +61,12 @@
       },
 
       promoContent: [
-        {title: "our campaign", video: "campaign.mp4"}
+        {video: "campaign.mp4"}
       ],
 
       contactContent: [
-        {heading: "call", content1: "+1 (866) 920-1601", content2: " ", icon: "phone.svg"},
-        {heading: "hours", content1: "Monday - Friday", content2: "9:00 AM - 5:00 PM", icon: "clock.svg"}
+        {heading: "call", content1: "+1 (866) 920-1601", icon: "phone.svg"},
+        {heading: "hours", content2: "Monday - Friday", content3: "9:00 AM - 5:00 PM", icon: "clock.svg"}
       ],
 
   // replace this with database content later
@@ -83,7 +83,6 @@
 
   helpButton.forEach(button => button.addEventListener("click", function(e) {
     this.classList.toggle("reveal");
-    helpIcon.classList.toggle("transform");
   }));
 
 
@@ -106,6 +105,8 @@
       this.fetchAbout();
       this.fetchPartners();
       this.fetchHelp();
+
+      
     },
 
     methods: {

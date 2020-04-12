@@ -21,7 +21,6 @@ $hamburger-zindex: $menu-zindex + 10;
   text-align: center;
   top: 0;
   transition: all 0.4s ease-in-out;
-  // For some sweet fadez
   visibility: hidden;
   width: 100%;
   z-index: $menu-zindex;
@@ -154,7 +153,7 @@ $hamburger-zindex: $menu-zindex + 10;
 .navSocials {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 68%;
   justify-content: space-evenly;
   margin: 8% auto 0;
   a {
@@ -163,7 +162,24 @@ $hamburger-zindex: $menu-zindex + 10;
       width: 220%;
     }
   }
-  a:nth-child(6) {
+  a:nth-child(5) {
     width: 105%;
+  }
+}
+
+.navSocials {
+  &:hover {
+    path {
+      opacity: 0.5;
+    }
+  }
+
+  path, polygon {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

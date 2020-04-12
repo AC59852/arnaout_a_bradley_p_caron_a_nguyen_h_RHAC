@@ -9,13 +9,13 @@
             }
         }
 
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 87%;
         }
     }
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 .helpBtn {
                     width: 150px;
                 }
@@ -32,7 +32,7 @@
                 width: 150%;
             }
         }
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 73%;
         }
     }
@@ -47,7 +47,7 @@
             }
         }
 
-        a:nth-child(6) {
+        a:nth-child(5) {
             width: 55%;
         }
     }
@@ -75,12 +75,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    .reveal {
+        height: 60vw !important;
+    }
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 height: 13.5vw;
                 h2 {
-                    font-size: 4vw;
+                    font-size: 3vw;
                 }
                 .helpBtn {
                     font-size: 4vw;
@@ -88,7 +91,8 @@
                     width: 35%;
                 }
                 p {
-                    font-size: 4.4vw;
+                    font-size: 2.6vw;
+                    line-height: 3.2vw;
                 }
                 p:nth-child(8) {
                     margin-bottom: 2%;
@@ -97,35 +101,61 @@
         }
     }
 
+    .contact {
+        width: 73%;
+
+        h3 {
+            width: 54%;
+        }
+
+        h4 {
+            font-size: 3.5vw;
+        }
+
+        h5 {
+            font-size: 2.5vw;
+        }
+
+        img {
+            width: 6%;
+            margin: 8% 24% 6%;
+        }
+    }
+
     .contactLink {
         a {
-            padding: 3% 4%;
-            font-size: 3.3vw;
+            padding: 2% 3%;
+            font-size: 2.5vw;
         }
     }
 
     #aboutSection {
         #aboutText {
             p {
-                font-size: 3.5vw;
-                width: 59%;
-                line-height: 4.5vw;
+                font-size: 2.3vw;
+                width: 52%;
+                line-height: 3.5vw;
             }
             a {
                 border-radius: 1.5vw;
+                font-size: 2.2vw;
+                padding: 1.6% 4%;
             }
         }
         #aboutImg {
             width: 55vw;
             height: 55vw;
             margin-left: 58%;
-            margin-top: -74%;
+            margin-top: -54%;
         }
+
+        margin-bottom: -25%;
     }
 
     #actionSection {
-        h3 {
-            margin-bottom: 20%;
+
+        .actionCon {
+            margin-top: 19%;
         }
         div {
             img {
@@ -137,21 +167,23 @@
                 width: 30%;
                 margin: 0 auto;
                 a {
-                    font-size: 2.6vw;
-                    width: 80%;
-                    padding: 4.5% 3% 6.5% 3%;
+                    font-size: 2vw;
+                    width: 68%;
+                    padding: 4.5% 0 6.5% ;
                     margin-top: 17%;
+                    border-radius: 1vw;
                 }
             }
             h4 {
-                font-size: 3.6vw;
+                font-size: 2.6vw;
                 margin-bottom: -11%;
             }
             p {
-                font-size: 3vw;
+                font-size: 2vw;
                 margin-top: 10%;
                 padding-top: 11%;
                 margin-bottom: auto;
+                width: 76%;
             }
         }
     }
@@ -215,40 +247,75 @@
 
     #promoContainer div {
         width: 75%;
-        margin: -5% auto 5%;
+        margin: -12% auto 5%;
     }
 
     .answersAdmin {
+        margin: 5% auto;
+
         .infoAdmin {
             margin: 0 auto;
             h2 {
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             p {
-                font-size: 3vw;
+                font-size: 2.5vw;
+                line-height: 3vw;
             }
 
             a {
                 width: 15%;
                 margin: 5% 0 10%;
+                padding: 1.5% 2% 2%;
+                font-size: 2.5vw;
             }
         }
 
         form {
             label {
-                font-size: 3vw;
+                font-size: 2.8vw;
                 margin-top: 2%;
             }
 
             input, textarea {
                 width: 55%;
                 margin: 2% auto;
+                font-size: 1.3vw;
+            }
+
+            textarea {
+                padding-bottom: 10%;
             }
 
             button {
                 width: 30%;
+                font-size: 2.5vw;
+                padding-bottom: 1.9%;
             }
+        }
+    }
+
+    .partnerForm {
+        label {
+            font-size: 2.8vw;
+            margin-top: 2%;
+        }
+
+        input, textarea {
+            width: 55%;
+            margin: 2% auto;
+            font-size: 1.3vw;
+        }
+
+        textarea {
+            padding-bottom: 10%;
+        }
+
+        button {
+            width: 30%;
+            font-size: 2.5vw;
+            padding-bottom: 1.9%;
         }
     }
 
@@ -256,16 +323,21 @@
         justify-content: space-evenly;
         .info {
             width: 45%;
-            margin-top: 5%;
+            margin-top: 0;
+
+            img {
+                width: 50%;
+            }
 
             h2 {
                 font-size: 2.4vw;
             }
 
             a {
-                width: 40%;
-                margin: 5% auto;
-                padding: 3% 0;
+                width: 35%;
+                margin: 5% auto 10%;
+                padding: 1.8% 2% 2.2%;
+                font-size: 2.5vw;
             }
         }
     }
@@ -289,6 +361,41 @@
                 font-size: 3.5vw;
             }
         } 
+    }
+
+    #partnerCon ul > li {
+        width: 33%;
+    }
+
+    #partnerCon ul li {
+        a {
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    .mainFooter {
+        padding-bottom: 3%;
+
+        .footerSocial {
+            width: 33%;
+            margin: 3% auto;
+            padding-top: 3%;
+        }
+
+        h4 {
+            font-size: 2vw;
+        }
+    }
+
+    #videoSection {
+        h3 {
+            font-size: 2.5vw;
+            span {
+                border-bottom-width: 0.6vw;
+            }
+        }
     }
 }
 
@@ -389,7 +496,7 @@
 
     #instaSection{
         h3 {
-            width: 38%;
+            width: 41%;
         }
     }
 
@@ -428,8 +535,8 @@
     }
 
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 height: 9.5vw;
                 h2 {
                     font-size: 2.5vw;
@@ -496,20 +603,27 @@
         }
         #aboutText {
             p {
-                font-size: 2.3vw;
+                font-size: 2vw;
                 width: 48%;
-                line-height: 3.5vw;
+                line-height: 3vw;
             }
             a {
                 padding: 1.3% 6% 1.3% 5%;
-                font-size: 2.5vw;
+                font-size: 2vw;
+                border-radius: 0.5vw;
             }
         }
         #aboutImg {
-            height: 48vw;
-            width: 48vw;
-            margin-top: -53%;
+            height: 46vw;
+            width: 46vw;
+            margin-top: -50%;
             margin-left: 54%;
+
+            img {
+                width: 184%;
+                top: -20%;
+                left: -77%;
+            }
         }
     }
     #actionSection {
@@ -526,15 +640,25 @@
                 font-size: 2.8vw;
             }
             p {
-                font-size: 2.1vw;
+                font-size: 1.7vw;
             }
             div {
                 a {
-                    font-size: 2vw;
+                    font-size: 1.6vw;
                     width: 53%;
                     padding: 4.5% 3%;
                     border-radius: 1vw;
                 }
+            }
+        }
+    }
+
+    #videoSection {
+        h3 {
+            border-bottom: none !important;
+            font-size: 2.2vw !important;
+            span {
+                border-bottom-width: 0.5vw;
             }
         }
     }
@@ -547,15 +671,12 @@
 
     .footerSocial {
         width: 33%;
-        a:nth-child(1) {
-            margin-top: auto;
-        }
 
     }
 
     .navSocials {
         margin-top: 3%;
-        width: 45%;
+        width: 35%;
         svg {
             width: 9%;
         }
@@ -631,6 +752,16 @@
             }
         }
     }
+
+    .partnerForm {
+        label {
+            font-size: 2vw;
+        }
+
+        input, textarea {
+            margin: 1% auto;
+        }
+    }
 }
 
 @media screen and (min-width: 1192px) {
@@ -639,9 +770,150 @@
             max-width: 100px;
         }
     }
+
+    .answersAdmin {
+        width: 80%;
+        h1 {
+            font-size: 4vw;
+            margin-bottom: 4%;
+        }
+        .infoAdmin {
+            a {
+                font-size: 1.5vw;
+                padding: 1% 2% 1.3%;
+                width: 11%;
+                margin: 3% 0 4%;
+            }
+
+            p {
+                font-size: 1.5vw;
+                width: 80%;
+                line-height: 2vw;
+            }
+
+            h2 {
+                font-size: 2vw;
+                margin-bottom: 2%;
+            }
+        }
+
+        form {
+            input {
+                margin: 1% auto;
+                font-size: 1vw;
+                width: 56%;
+            }
+            label {
+                font-size: 1.5vw;
+                margin-top: 2%;
+            }
+
+            button {
+                width: 21%;
+                font-size: 1.2vw;
+                padding-bottom: 1.4%;
+                padding-top: 1.4%;
+                margin: 2% auto;
+
+            }
+        }
+    }
+
+    .partnerForm {
+        input {
+            margin: 1% auto;
+            font-size: 1vw;
+            width: 56%;
+        }
+        label {
+            font-size: 1.5vw;
+            margin-top: 2%;
+        }
+
+        button {
+            width: 21%;
+            font-size: 1.2vw;
+            padding-bottom: 1.4%;
+            padding-top: 1.4%;
+            margin: 2% auto;
+
+        }
+    }
+
+    .partnersAdmin {
+        h1 {
+            font-size: 4vw;
+            margin-bottom: 4%;
+        }
+        .info {
+            width: 28%;
+            
+            h2 {
+                font-size: 1.3vw;
+            }
+
+            img {
+                width: 55%;
+            }
+
+            a {
+                font-size: 1.3vw;
+                padding: 2% 2% 2.5%;
+                width: 25%;
+                margin: 3% auto 4%;
+            }
+        }
+    }
+
+    .adminheading {
+        h2, a {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #actionSection {
+        div {
+            p {
+                font-size: 1.85vw;
+            }
+            div {
+                a {
+                    font-size: 1.6vw;
+                    width: 48%;
+                    border-radius: 0.5vw;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
+
+    .navSocials {
+        width: 27%;
+    }
+
+    .mainFooter {
+
+        .footerSocial {
+            width: 24%;
+            padding-top: 0;
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+    
+         h4 {
+            font-size: 1.2vw;
+        }
+    }
+
+    #promoContainer {
+        div {
+            width: 60%;
+        }
+    }
 
     #instaSection{
         h3 {
@@ -659,26 +931,31 @@
     h3 {
         font-size: 3vw !important;
     }
+
+    .reveal {
+        height: 29vw !important;
+    }
+
     .infoObject {
-        ul {
-            li {
-                height: 7.5vw;
+        div {
+            div {
+                height: 4.5vw;
                 h2 {
                     font-size: 1.7vw;
-                    padding-top: 2.5%;
+                    padding-top: 1.2%;
+                    padding-bottom: 3%;
+                    padding-left: 7%;
                 }
                 p {
-                    font-size: 2vw;
-                    line-height: 3vw;
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                    width: 59%;
+                    margin: 1% 7%;
                 }
                 img {
-                    margin-top: 2.8%;
-                }
-                .helpBtn {
-                    font-size: 1.4vw;
-                    padding: 1.5% 1%;
-                    width: 17%;
-                    border-radius: 1vw;
+                    margin-top: 1.8%;
+                    width: 2%;
+                    right: 7%;
                 }
             }
         }
@@ -719,34 +996,48 @@
         }
     }
 
-    #aboutSection {
-        #aboutText {
-            margin-left: 16%;
-            p {
-                font-size: 1.6vw;
-                width: 42%;
-                line-height: 2.8vw;
-            }
-            a{
-                font-size: 1.6vw;
-                padding: 1% 4% 1% 3%;
-                border-radius: 1vw;
-            }
-        }
-        #aboutImg {
-            height: 34vw;
-            width: 34vw;
-            margin-top: -46%;
-            margin-left: 67%;
-            img {
-                width: 134%;
-                top: 0;
-                left: -29%;
-            }
+    #greenCircle {
+        margin-top: -12%;
+        width: 13vw;
+        height: 13vw;
+        right: 30%;
     }
 
+    #aboutSection {
+        width: 80%;
+        margin: 20% auto -25%;
+        #aboutImg {
+            margin-top: -38%;
+            margin-left: 62%;
+            height: 30vw;
+            width: 30vw;
+            img {
+                left: -57%;
+                width: 160%;
+                top: -15%;
+            }
+        }
+
         h3 {
-            width: 29%;
+            width: 34%;
+        }
+
+        div #aboutText p:nth-child(2) {
+                margin-bottom: 4%;
+        }
+
+        #aboutText {
+            a {
+                font-size: 1.1vw;
+                padding: 1% 4% 1% 3%;
+            }
+
+            p {
+                font-size: 1.4vw;
+                line-height: 2vw;
+                width: 42%;
+            }
+
         }
     }
 
@@ -755,33 +1046,50 @@
     }
 
     #actionSection {
+        margin-top: 0;
         h3 {
             width: 24%;
         }
+
+        .actionCon {
+            margin-top: 14%;
+        }
+
         div {
             img {
-                width: 93%;
-                margin-left: 5%;
+                width: 78%;
+                margin-left: 11%;
+                margin-top: -90%;
             }
             h4 {
                 font-size: 2.2vw;
             }
             p {
                 font-size: 1.4vw;
+                text-align: center;
             }
             div {
                 a {
-                    font-size: 1.4vw;
-                    width: 45%;
+                    font-size: 1.2vw;
+                    width: 35%;
                     padding: 3.1% 2.5%;
                 }
             }
         }
     }
 
+    #instaSection {
+        margin-bottom: 0;
+        h3 {
+            margin-bottom: 3%;
+        }
+    }
+
     #partners {
+        margin-top: 6%;
         h3 {
             width: 26%;
+            margin-bottom: 5%;
         }
     }
 
@@ -793,10 +1101,6 @@
         width: 80%;
     }
 
-    .footerSocial {
-        width: 25%;
-    }
-
 }
 
 @media screen and (min-width: 1300px) {
@@ -806,6 +1110,7 @@
 }
 
 @media screen and (min-width: 1366px) {
+
     .contact {
         width: 50%;
         padding-bottom: 8%;
@@ -817,12 +1122,12 @@
     }
 
     .reveal {
-        height: 45vw !important;
+        height: 30vw !important;
     }
 
     .infoObject {
-        ul {
-            li {
+        div {
+            div {
                 .helpTitle {
                     padding-bottom: 1%;
                 }
@@ -831,17 +1136,6 @@
                     width: 2.6%;
                 }
             }
-        }
-    }
-
-    .navSocials {
-        width: 35%;
-        svg {
-            width: 9%;
-        }
-    
-        svg:nth-child(6) {
-            width: 4.5%;
         }
     }
 
@@ -880,37 +1174,6 @@
         }
     }
 
-    .answersAdmin {
-        .infoAdmin {
-            a {
-                font-size: 2vw;
-            }
-        }
-    }
-
-    .partnersAdmin {
-        .info {
-            width: 28%;
-            
-            h2 {
-                font-size: 1.5vw;
-            }
-
-            img {
-                width: 60%;
-            }
-
-            a {
-                font-size: 2vw;
-            }
-        }
-    }
-
-    .adminheading {
-        h2, a {
-            font-size: 3vw;
-        }
-    }
 
     .login {
         margin-top: 5%;
@@ -945,25 +1208,81 @@
 }
 
 @media screen and (min-width: 1680px) {
+    .contact {
+        width: 45%;
+        padding-bottom: 8%;
+        margin-top: -9%;
+
+        h3 {
+            width: 46%;
+            padding-top: 28%;
+        }
+
+        h4 {
+            font-size: 2.2vw;
+        }
+
+        h5 {
+            font-size: 1.2vw;
+        }
+
+        img {
+            margin-left: 30%;
+        }
+    }
+
+    .contactLink {
+        a {
+            font-size: 1.1vw;
+            padding: 1.5%;
+        }
+    }
+
+    .reveal {
+        height: 24vw !important;
+    }
+
+    .infoObject {
+        div {
+            div {
+                h2 {
+                    font-size: 1.4vw;
+                    padding-bottom: 4%;
+                }
+
+                img {
+                    width: 1.6%;
+                    margin-top: 2%;
+                }
+
+                p {
+                    font-size: 1.2vw;
+                    width: 57%;
+                    line-height: 1.6vw;
+                }
+            }
+        }
+    }
+
     #aboutSection {
+        margin-top: 16%;
         #aboutText {
             margin-left: 16%;
             p {
-                font-size: 1.8vw;
-                width: 42%;
-                line-height: 2.8vw;
+                font-size: 1.2vw;
+                width: 37%;
+                line-height: 1.5vw;
             }
             a{
-                font-size: 1.3vw;
-                padding: 1% 4% 1% 3%;
-                border-radius: 1vw;
+                font-size: 1vw;
+                padding: 1% 4% 1.1% 3%;
             }
         }
         #aboutImg {
-            height: 34vw;
-            width: 34vw;
-            margin-top: -46%;
-            margin-left: 67%;
+            height: 27vw;
+            width: 27vw;
+            margin-top: -31%;
+            margin-left: 64%;
             img {
                 width: 134%;
                 top: 0;
@@ -972,10 +1291,31 @@
     }
 }
 #greenCircle {
-    margin-top: -26%;
-    right: 25%;
-    width: 17vw;
-    height: 17vw;
+    margin-top: -7%;
+    right: 30%;
+    width: 10vw;
+    height: 10vw;
+}
+
+#actionSection {
+    margin-top: -31%;
+
+    div {
+        p {
+            font-size: 1.1vw;
+        }
+
+        div {
+            a {
+                padding: 3.1% 0.5%;
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+#instaSection {
+    margin-top: 11%;
 }
 
 .toggle-menu {
@@ -996,13 +1336,13 @@
 }
 
 .navSocials {
-    width: 25%;
+    width: 20%;
     svg {
-        width: 9%;
+        width: 1%;
     }
 
     svg:nth-child(6) {
-        width: 4.5%;
+        width: 5%;
     }
 }
 
@@ -1036,6 +1376,47 @@
                 margin: 3% auto 1%;
             }
         }
+    }
+}
+
+.answersAdmin {
+    .infoAdmin {
+        p {
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+        }
+
+        a {
+            font-size: 1vw;
+            width: 7%;
+        }
+    }
+
+    form {
+        input, textarea {
+            font-size: 1vw;
+        }
+    }
+}
+
+.partnerForm {
+    input, textarea {
+        font-size: 1vw;
+    }
+}
+
+.mainFooter {
+    padding-bottom: 1%;
+
+    .footerSocial {
+        width: 18%;
+        padding-top: 0;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+     h4 {
+        font-size: 1vw;
     }
 }
 }

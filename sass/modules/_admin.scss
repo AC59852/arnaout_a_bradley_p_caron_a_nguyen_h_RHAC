@@ -13,14 +13,15 @@
     .infoAdmin {
         margin-top: 5%;
         h2 {
-            font-size: 5vw;
+            font-size: 4vw;
             font-weight: bold;
-            margin-bottom: 2%;
+            margin-bottom: 5%;
         }
 
         p {
-            font-size: 4.5vw;
+            font-size: 3.5vw;
             margin-top: 2%;
+            line-height: 4vw;
         }
 
         a {
@@ -34,35 +35,49 @@
             display: flex;
             margin-top: 8%;
             margin-bottom: 8%;
+
+            &:hover {
+                background-color: #c01f1f;
+            }
         }
     }
 
     form {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
 
         label {
             text-align: center;
-            margin-top: 10%;
+            margin-top: 5%;
             font-size: 4vw;
         }
 
         input, textarea {
-            margin-top: 3%;
+            margin-top: 2%;
         }
 
         textarea {
             padding-left: 1.5%;
             padding-top: 1.5%;
-            padding-bottom: 15%;
+            padding-bottom: 18%;
         }
 
         button {
-            width: 60%;
-            padding: 1% 0 1.2%;
+            width: 50%;
+            padding: 2% 0 2.3%;
             margin: 4% auto;
+            color: white;
+            background-color: #191919;
+            border: solid 2px white;
+            font-size: 3.3vw;
+
+            &:hover {
+                background-color: white;
+                color: #191919;
+                border: solid 2px #191919;
+            }
         }
     }
 }
@@ -90,13 +105,14 @@
         margin: 0 auto;
         img {
             margin: 0 auto;
-            width: 60%;
+            width: 40%;
         }
 
         h2 {
-            font-size: 5vw;
+            font-size: 4vw;
             font-weight: bold;
             margin-bottom: 2%;
+            margin-top: 2%;
         }
 
         a {
@@ -109,7 +125,12 @@
             font-size: 3.5vw;
             display: flex;
             margin-top: 8%;
-            margin-bottom: 8%;
+            width: 60%;
+            margin: 2% auto 8%;
+            
+            &:hover {
+                background-color: #c01f1f;
+            }
         }
     }
 }
@@ -120,17 +141,21 @@
     margin: 3% auto;
     justify-content: space-between;
     h2, a{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     a {
         text-decoration: none;
         color: #942727;
+
+        &:hover {
+            background-color: #c01f1f;
+        }
     }
 }
 .login {
 
-    width: 75%;
+    width: 65%;
     margin: 15% auto 0;
 
     .loginForm {
@@ -152,13 +177,58 @@
         }
 
         button {
-            border: none;
             background-color: #192981;
             width: 55%;
-            margin: 0 auto;
+            margin: 5% auto 0;
             font-size: 5vw;
             color: white;
             padding: 2% 0 2.2%;
+            border: solid 3px white;
+
+            &:hover {
+                border: solid 3px #192981;
+                color: #191919;
+                background-color: white;
+            }
+        }
+    }
+}
+
+.partnerForm {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+
+    label {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 4vw;
+    }
+
+    input, textarea {
+        margin-top: 2%;
+    }
+
+    textarea {
+        padding-left: 1.5%;
+        padding-top: 1.5%;
+        padding-bottom: 18%;
+    }
+
+    button {
+        width: 50%;
+        padding: 2% 0 2.3%;
+        margin: 4% auto;
+        color: white;
+        background-color: #191919;
+        border: solid 2px white;
+        font-size: 3.3vw;
+
+        &:hover {
+            background-color: white;
+            color: #191919;
+            border: solid 2px #191919;
         }
     }
 }
