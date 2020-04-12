@@ -2,7 +2,7 @@
 function getAll($tbl){
     $pdo = Database::getInstance()->getConnection();
 
-    $queryAll = 'SELECT * FROM '.$tbl;
+    $queryAll = 'SELECT * FROM '.$tbl.'ORDER BY id';
     $results = $pdo->query($queryAll);
 
     if($results){

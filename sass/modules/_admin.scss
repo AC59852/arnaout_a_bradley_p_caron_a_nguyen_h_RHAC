@@ -35,6 +35,10 @@
             display: flex;
             margin-top: 8%;
             margin-bottom: 8%;
+
+            &:hover {
+                background-color: #c01f1f;
+            }
         }
     }
 
@@ -123,6 +127,10 @@
             margin-top: 8%;
             width: 60%;
             margin: 2% auto 8%;
+            
+            &:hover {
+                background-color: #c01f1f;
+            }
         }
     }
 }
@@ -139,6 +147,10 @@
     a {
         text-decoration: none;
         color: #942727;
+
+        &:hover {
+            background-color: #c01f1f;
+        }
     }
 }
 .login {

@@ -77,7 +77,7 @@
         <label>About Description 2</label>
         <textarea name="aboutdesc2"></textarea>
 
-        <button type="submit" name="aboutSubmit">Add Product</button>
+        <button type="submit" name="aboutSubmit">Update About</button>
     </form>
 
         </div>
@@ -102,10 +102,10 @@
             <label>Partner Name</label>
             <input type="text" name="partnername" value=""></input>
 
-            <label>Partner Link (Optional)</label>
+            <label>Partner Website Link (Optional)</label>
             <input type="text" name="partnerlink" value=""></input>
             
-        <button type="submit" name="partnerSubmit">Add Product</button>
+        <button type="submit" name="partnerSubmit">Add Partner</button>
     </form>
     </div>
 
