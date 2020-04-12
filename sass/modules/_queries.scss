@@ -964,22 +964,30 @@
         }
     }
 
+    #greenCircle {
+        margin-top: -12%;
+        width: 13vw;
+        height: 13vw;
+        right: 30%;
+    }
+
     #aboutSection {
-        margin-bottom: -35%;
+        width: 80%;
+        margin: 20% auto -25%;
         #aboutImg {
-            height: 34vw;
-            width: 34vw;
-            margin-top: -28%;
-            margin-left: 64%;
+            margin-top: -38%;
+            margin-left: 62%;
+            height: 30vw;
+            width: 30vw;
             img {
-                width: 170%;
+                left: -57%;
+                width: 160%;
                 top: -15%;
-                left: -68%;
             }
         }
 
         h3 {
-            width: 29%;
+            width: 34%;
         }
 
         div #aboutText p:nth-child(2) {
@@ -995,6 +1003,7 @@
             p {
                 font-size: 1.4vw;
                 line-height: 2vw;
+                width: 42%;
             }
 
         }
@@ -1073,39 +1082,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-
-    #aboutSection {
-        width: 80%;
-        margin: 20% auto -25%;
-
-        h3 {
-            width: 34%;
-        }
-
-        #aboutText {
-            p {
-                width: 42%;
-            }
-        }
-
-        #aboutImg {
-            margin-top: -38%;
-            margin-left: 62%;
-            height: 30vw;
-            width: 30vw;
-            img {
-                left: -57%;
-                width: 160%;
-            }
-        }
-    }
-
-    #greenCircle {
-        margin-top: -12%;
-        width: 13vw;
-        height: 13vw;
-        right: 30%;
-    }
 
     .contact {
         width: 50%;
@@ -1266,7 +1242,7 @@
             margin-left: 16%;
             p {
                 font-size: 1.2vw;
-                width: 36%;
+                width: 37%;
                 line-height: 1.5vw;
             }
             a{
@@ -1278,7 +1254,7 @@
         #aboutImg {
             height: 27vw;
             width: 27vw;
-            margin-top: -24%;
+            margin-top: -31%;
             margin-left: 64%;
             img {
                 width: 134%;
