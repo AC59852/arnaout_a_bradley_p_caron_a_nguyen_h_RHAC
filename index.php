@@ -1,7 +1,7 @@
 <?php
     require_once 'load.php';
         $infoTable = 'tbl_moreInfo';
-        $getInfo = getAll($infoTable);
+        $getInfo = getInfoTbl($infoTable);
 ?>
 
 

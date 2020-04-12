@@ -11,9 +11,9 @@
     <ul>
         <li><a class="navBtn" href="#help">help!</a></li>
         <li><a class="navBtn" href="#aboutSection">about us</a></li>
-        <li><a class="navBtn" href="#actionSection">get involved</a></li>
+		<li><a class="navBtn" href="#actionSection">get involved</a></li>
+		<li><a class="navBtn" target="_blank" href="#">Our Events</a></li>
         <li><a class="navBtn" href="#partners">partners</a></li>
-        <li><a class="navBtn" href="#home">donate</a></li>
     </ul>
     <div class="navSocials">
     <a href="http://instagram.com"><svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

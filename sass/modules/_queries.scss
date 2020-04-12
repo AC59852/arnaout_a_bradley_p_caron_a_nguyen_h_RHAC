@@ -901,26 +901,29 @@
     h3 {
         font-size: 3vw !important;
     }
+
+    .reveal {
+        height: 29vw !important;
+    }
+
     .infoObject {
         div {
             div {
-                height: 7.5vw;
+                height: 4.5vw;
                 h2 {
                     font-size: 1.7vw;
-                    padding-top: 2.5%;
+                    padding-top: 1.2%;
+                    padding-bottom: 3%;
                 }
                 p {
-                    font-size: 2vw;
-                    line-height: 3vw;
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                    width: 59%;
+                    margin: 1% 7%;
                 }
                 img {
-                    margin-top: 2.8%;
-                }
-                .helpBtn {
-                    font-size: 1.4vw;
-                    padding: 1.5% 1%;
-                    width: 17%;
-                    border-radius: 1vw;
+                    margin-top: 1.6%;
+                    width: 2%;
                 }
             }
         }
@@ -962,13 +965,14 @@
     }
 
     #aboutSection {
+        margin-bottom: -35%;
         #aboutImg {
-            height: 39vw;
-            width: 39vw;
-            margin-top: -41%;
-            margin-left: 66%;
+            height: 34vw;
+            width: 34vw;
+            margin-top: -28%;
+            margin-left: 64%;
             img {
-                width: 165%;
+                width: 170%;
                 top: -15%;
                 left: -68%;
             }
@@ -978,16 +982,21 @@
             width: 29%;
         }
 
+        div #aboutText p:nth-child(2) {
+                margin-bottom: 4%;
+        }
+
         #aboutText {
             a {
-                font-size: 1.5vw;
-                padding: 1.3% 4% 1.3% 3%;
+                font-size: 1.1vw;
+                padding: 1% 4% 1% 3%;
             }
 
             p {
-                font-size: 1.9vw;
-                line-height: 3vw;
+                font-size: 1.4vw;
+                line-height: 2vw;
             }
+
         }
     }
 
@@ -1000,6 +1009,11 @@
         h3 {
             width: 24%;
         }
+
+        .actionCon {
+            margin-top: 14%;
+        }
+
         div {
             img {
                 width: 78%;
@@ -1011,6 +1025,7 @@
             }
             p {
                 font-size: 1.4vw;
+                text-align: center;
             }
             div {
                 a {
@@ -1022,9 +1037,18 @@
         }
     }
 
+    #instaSection {
+        margin-bottom: 0;
+        h3 {
+            margin-bottom: 3%;
+        }
+    }
+
     #partners {
+        margin-top: 6%;
         h3 {
             width: 26%;
+            margin-bottom: 5%;
         }
     }
 
@@ -1175,25 +1199,52 @@
             padding: 1.5%;
         }
     }
+
+    .reveal {
+        height: 24vw !important;
+    }
+
+    .infoObject {
+        div {
+            div {
+                h2 {
+                    font-size: 1.4vw;
+                    padding-bottom: 0;
+                }
+
+                img {
+                    width: 1.6%;
+                    margin-top: 2%;
+                }
+
+                p {
+                    font-size: 1.2vw;
+                    width: 57%;
+                    line-height: 1.6vw;
+                }
+            }
+        }
+    }
+
     #aboutSection {
         margin-top: 16%;
         #aboutText {
             margin-left: 16%;
             p {
-                font-size: 1.4vw;
-                width: 42%;
-                line-height: 2vw;
+                font-size: 1.2vw;
+                width: 36%;
+                line-height: 1.5vw;
             }
             a{
-                font-size: 1.3vw;
-                padding: 1% 4% 1% 3%;
+                font-size: 1vw;
+                padding: 1% 4% 1.1% 3%;
                 border-radius: 1vw;
             }
         }
         #aboutImg {
-            height: 32vw;
-            width: 32vw;
-            margin-top: -34%;
+            height: 27vw;
+            width: 27vw;
+            margin-top: -24%;
             margin-left: 64%;
             img {
                 width: 134%;
@@ -1203,14 +1254,31 @@
     }
 }
 #greenCircle {
-    margin-top: -14%;
-    right: 28%;
-    width: 13vw;
-    height: 13vw;
+    margin-top: -7%;
+    right: 30%;
+    width: 10vw;
+    height: 10vw;
 }
 
 #actionSection {
     margin-top: -31%;
+
+    div {
+        p {
+            font-size: 1.1vw;
+        }
+
+        div {
+            a {
+                padding: 3.1% 0.5%;
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+#instaSection {
+    margin-top: 11%;
 }
 
 .toggle-menu {
