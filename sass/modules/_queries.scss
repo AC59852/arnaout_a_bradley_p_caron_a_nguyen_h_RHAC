@@ -1073,6 +1073,40 @@
 }
 
 @media screen and (min-width: 1366px) {
+
+    #aboutSection {
+        width: 80%;
+        margin: 20% auto -25%;
+
+        h3 {
+            width: 34%;
+        }
+
+        #aboutText {
+            p {
+                width: 42%;
+            }
+        }
+
+        #aboutImg {
+            margin-top: -38%;
+            margin-left: 62%;
+            height: 30vw;
+            width: 30vw;
+            img {
+                left: -57%;
+                width: 160%;
+            }
+        }
+    }
+
+    #greenCircle {
+        margin-top: -12%;
+        width: 13vw;
+        height: 13vw;
+        right: 30%;
+    }
+
     .contact {
         width: 50%;
         padding-bottom: 8%;
@@ -1084,7 +1118,7 @@
     }
 
     .reveal {
-        height: 45vw !important;
+        height: 30vw !important;
     }
 
     .infoObject {
