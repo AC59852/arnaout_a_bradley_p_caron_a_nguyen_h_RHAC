@@ -59,11 +59,11 @@ choosing appropriate images for the site, as well as collaborating on any site t
 
 
 ### Project Specs
-The site was created using a combination of LAMP stack backend, Vue.js rendering front end components 
+The site was created using a combination of LAMP stack backend, Vue.js rendering front end components
 <br>
-with PHP and HTML, styled using SASS
+with PHP and HTML, styled using SASS.
 <br>
-advertisement campaign including events, full motion ads, posters and more.
+The advertisement campaign including events, full motion ads, posters, research and more.
 
 ### Future Goals
 Future plans for the site include creating a full scale Instagram API to track hashtags and posts about #NoShame.
