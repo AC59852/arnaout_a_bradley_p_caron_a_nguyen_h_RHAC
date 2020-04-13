@@ -120,7 +120,7 @@
     :video="promoVideo.video"></promotion>
     </section>
     <section id="instaSection">
-    <h3>Our Social Media</h3>
+    <h3>connect with us</h3>
     <div class='embedsocial-instagram' data-ref="dcbf3f835317e7c1a7738d47d39f90d04d695ddc"></div>
     </section>
     <section id="partners">
