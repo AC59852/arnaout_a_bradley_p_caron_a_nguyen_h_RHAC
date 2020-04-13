@@ -12,7 +12,7 @@
         <li><a class="navBtn" href="#help">help!</a></li>
         <li><a class="navBtn" href="#aboutSection">about us</a></li>
 		<li><a class="navBtn" href="#actionSection">get involved</a></li>
-		<li><a class="navBtn" target="_blank" href="#">Our Events</a></li>
+		<li><a class="navBtn" href="public/images/events.pdf" target="_blank">Our Events</a></li>
         <li><a class="navBtn" href="#partners">partners</a></li>
     </ul>
     <div class="navSocials">
