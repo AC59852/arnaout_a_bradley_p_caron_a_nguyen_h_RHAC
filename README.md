@@ -34,12 +34,19 @@ host, database, username and password to "localhost", "db_rhac", "root" and eith
 
 ### Tools Used
 **Visual Studio Code** - For coding the site and making everything work smoothly
+<br>
 **Adobe Photoshop** - For manipulating the images on the page
+<br>
 **Adobe Illustrator** - For creating the vector images as well as logo
+<br>
 **Adobe Premiere Pro** - For creating the video
+<br>
 **Adobe After Effects** - For post processing and any effects in the video
+<br>
 **MySQL** - For creating dynamic database driven content
+<br>
 **PHP** - For running the register/login query
+<br>
 **Vue.js** - For creating the components and view models seen on the screen
 
 ### Authors
