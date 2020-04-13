@@ -57,7 +57,9 @@ as well as collaborating on any site transitions and animations.
 <br>
 **Patrick Bradley** - UX/Ui/Graphic Designer - Patrick Bradley was in charge of the site layout, color tones and 
 <br> 
-choosing appropriate images for the site, as well as collaborating on any site transitions and animations.
+choosing appropriate images for the site, created social media mockups, lo-fi and hi-fi designs and prototyping
+<br>
+as well as collaborating on any site transitions and animations.
 
 
 ### Project Specs
