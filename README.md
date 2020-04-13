@@ -20,13 +20,15 @@ since we can only end stigma together.
 ### Setup
 If you are wanting to view the code for yourself, follow these steps:
 <br>
-**1.** Download the repository up above, **2.** Navigate to the downloaded folder and open the project with
+**1.** Download the repository up above, 
 <br>
-either a gitbash (for Windows), Terminal (for Apple), or Visual Studio Code window. **3.** place the file in your WAMP/MAMP directory 
+**2.** Navigate to the downloaded folder and open the project with either a gitbash (for Windows), Terminal (for Apple), or Visual Studio Code window. 
 <br>
-(www for WAMP and htaccess for MAMP) **4.** OPTIONAL navigate to the includes/config and config/config files and change the host,
+**3.** place the file in your WAMP/MAMP directory (www for WAMP and htaccess for MAMP) 
 <br>
-database, username and password to "localhost", "db_rhac", "root" and either "root" as password for MAC, or leave password empty for windows.
+**4.** OPTIONAL navigate to the includes/config and config/config files and change the:
+<br>
+host, database, username and password to "localhost", "db_rhac", "root" and either "root" as password for MAC, or leave password empty for windows.
 <br>
 **5.** open your browser of choice and navigate to localhost/arnaout_a_bradley_p_caron_a_nguyen_h/index.php to get started!
 
