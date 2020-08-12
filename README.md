@@ -58,9 +58,7 @@ meetings and had the final say in every design and development choice, as well a
 <br>
 Vue.js components and performed all of the styling and javascript functionality.
 <br>
-**Hien Nguyen** - Motion Designer. Hien created the full motion advertisements on all social media platforms, of all lengths,
-<br>
-as well as collaborating on any site transitions and animations.
+**Hien Nguyen** - Motion Designer. Hien created the full motion advertisements on all social media platforms, of all lengths, as well as collaborating on any site transitions and animations.
 <br>
 **Patrick Bradley** - UX/Ui/Graphic Designer - Patrick Bradley was in charge of the site layout, color tones and 
 <br> 
