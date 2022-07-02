@@ -35,8 +35,8 @@ function register($fname, $lname, $email){
         $mail->Port = 587;
         $mail->SMTPAuth=true;
 
-        $mail->Username='thkdesigns@gmail.com';
-        $mail->Password='Au17829364773';
+        $mail->Username='';
+        $mail->Password='';
 
         $mail->addAddress($email);
         $mail->setFrom('test@rhac.com');
